@@ -11,7 +11,7 @@ placement flexible. Try to pick a 802.3af compliant PoE if you're going for it.
 
 You will need a [router](https://en.wikipedia.org/wiki/Router_(computing)) too. It will connect to the internet and 
 receive traffic to and from your camera and the outside world, preferrably your home. 
-Routers too come in variety of options and your choice of router will narrow down depending on whether the camera
+Routers too come in variety of options and your choice of router will narrow down depending on whether your camera
 is wired or wireless. 
 
 For connecting your router to the internet, you might choose to buy a separate [modem](https://en.wikipedia.org/wiki/Modem)
