@@ -4,7 +4,7 @@ Herein, you shall find `random()` blog posts on subjects that are curious for my
 
 ### Posts
 
-[Remove IP Camera setup bypassing CGNAT using Openwrt + LTE USB Dongle](https://pulakk.github.io/blog/remote-camera)
+[Challenges in setting up a remote IP Camera](https://pulakk.github.io/blog/remote-camera)
 
 ## About me
 
