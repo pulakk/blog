@@ -46,7 +46,7 @@ wireguard app can act as the client to connect to the server's public IP address
 and create a tunnel. You would then be able to connect to the router
 remotely as long as you can access the hosted server remotely.
 
-This brings us to the another problem. Not all routers have VPN client support. 
+This brings us to another problem. Not all routers have VPN client support. 
 So you can either carefully choose a router which provides that, or flash a 
 router with an alternative firmware like [OpenWRT](https://openwrt.org/) or 
 [DDWRT](https://dd-wrt.com/support/router-database/). The open source alternatives
