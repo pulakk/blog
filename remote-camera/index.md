@@ -1,7 +1,6 @@
 # Accessing IP Cameras remotely
 
-Setting up a camera, to be viewable remotely in a place 
-where there is no support for Wired ISPs, is a very challening task.
+Setting up a camera, to be viewable remotely is a very challening task.
 
 Picking the right camera is the first step. You might need features like
 nightvision, communication through internet protocol ([IP](https://en.wikipedia.org/wiki/IP_address)), 
