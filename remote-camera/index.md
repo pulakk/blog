@@ -38,8 +38,8 @@ and a VPN client on the router, in which case a VPN software
 like [Wireguard](https://www.wireguard.com/) will come in handy. This is
 because, although you might not have a public IP address, a hosted server
 for e.g. in [Digital Ocean](https://www.digitalocean.com/), will. So your 
-wireguard app can act as the client can create a tunnel to the server
-through the server's public ip address. You can then connect to the router
+wireguard app can act as the client to connect to the server's public IP address
+and create a tunnel. You would then be able to connect to the router
 remotely as long as you can access the hosted server remotely.
 
 This brings us to the another problem. Not all routers have VPN client support. 
