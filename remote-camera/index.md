@@ -82,4 +82,4 @@ Software setup -
 * USB Dongle Protocol: NCM; LTE
 * Wireguard Client installed through opkg on OpenWRT and configured through LuCI WebUI
 * Wireguard VPN Server on Digital Ocean droplet
-* Customm domain name pointing to Digital Ocean droplet (Optional)
+* Custom domain name pointing to Digital Ocean droplet (Optional)
