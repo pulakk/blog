@@ -33,7 +33,7 @@ But with ISPs moving towards [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade
 it is highly unlikely you will get a public IP address, 
 let alone a static one. That is especially the case
 in LTE USB Dongle Modems. You'll be assigned a
-shared [space private IP](https://en.wikipedia.org/wiki/IPv4_shared_address_space)
+[shared space private IP](https://en.wikipedia.org/wiki/IPv4_shared_address_space)
 in the range `100.*.*.*` instead of a public IP Address.
 DDNS will be of no help in this scenario. 
 
