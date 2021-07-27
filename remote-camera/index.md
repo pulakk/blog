@@ -30,7 +30,7 @@ in which case you might need to resort to a Dynamic DNS
 Note: This also means that you will need to get a router with DDNS support.
 
 But with ISPs moving towards [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), 
-it will be hard to find an ISP which will give you a public IP address, 
+it is highly unlikely you will get a public IP address, 
 let alone a static one. That is especially the case
 in LTE USB Dongle Modems. You'll be assigned a
 shared [space private IP](https://en.wikipedia.org/wiki/IPv4_shared_address_space)
