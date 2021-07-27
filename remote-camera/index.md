@@ -1,10 +1,13 @@
 # Accessing IP Cameras remotely
 
+## Intro
 Setting up a camera, to be viewable remotely is a very challening task.
 
 Picking the right camera is the first step. You might need features like
 nightvision, communication through internet protocol ([IP](https://en.wikipedia.org/wiki/IP_address)), 
-outdoor/indoor depending on your use case, microphone support, ethernet or wireless connection,
+outdoor/indoor depending on your use case, microphone support, 
+[ethernet cable (RJ45)](https://en.wikipedia.org/wiki/Ethernet)
+or wireless connection,
 etc. If you're going for an ethernet connected camera, you might need a 
 [PoE](https://en.wikipedia.org/wiki/Power_over_Ethernet) device, to keep the camera
 placement flexible. Try to pick a 802.3af compliant PoE if you're going for it.
@@ -58,3 +61,24 @@ and errors for hours before figuring out the right configuration for your modem.
 
 Accessing the camera remotely this point on, is just a matter of forwarding ports and
 changing firewall rules.
+
+I had faced the same problems on my end, starting with clueless guesses on 
+the choice of the router and the camera
+and spending hours figuring out solutions for all these problems. Hopefully this tutorial
+should either straighten up the process for you or scare you away from the humongous difficulty of setting
+up and accessing a single camera through the internet.
+
+## My custom setup
+
+My inventory for the setup is -
+* Router: TP-Link MR3020 (USB Port for 3G/4G Dongle + 1 Ethernet Port + WiFi)
+* USB Dongle: Huawei E3372h-607 "Airtel 4G", SIM: Airtel
+* Camera: HIKVision DS-2CD1321-I 2.0MP NightVision Dome
+* PoE: TP-LINK TL-PoE150S PoE Injector
+
+Software setup -
+* OpenWRT firmware on the router
+* USB Dongle Protocol: NCM; LTE
+* Wireguard Client installed through opkg on OpenWRT and configured through LuCI WebUI
+* Wireguard VPN Server on Digital Ocean droplet
+* Customm domain name pointing to Digital Ocean droplet (Optional)
