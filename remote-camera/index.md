@@ -90,7 +90,7 @@ Software setup -
 Read through the official [tutorial for flashing OpenWRT firmware to an MR3020 V3 router](https://openwrt.org/toh/tp-link/tl-mr3020_v3). Skip the `Install OpenWRT (Generic Explanation)` link and go straight to the `Configure a TFTP server as follows:` portion. There are numerous tutorials on youtube as well which show you how to install OpenWRT firmware on an MR3020 router via TFTP. The process is described briefly below -
 
 * Make sure you have a PC with an Ethernet port to connect to the router. The wireless interface will be disabled after the flashing process and you will not be able to connect to your router wirelessly after booting.
-* Download and install `Tftpd32-4.60-setup.exe` from [Pulpstone](https://pulpstone.pw/tools/) if you have a windows PC. If you don't then look online for links for your Operating System. [TFTP] (https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol) is the protocol through which the OpenWRT firmware will be transferred to your router for the flashing process.
+* Download and install `Tftpd32-4.60-setup.exe` from [Pulpstone](https://pulpstone.pw/tools/) if you have a windows PC. If you don't then look online for links for your Operating System. [TFTP](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol) is the protocol through which the OpenWRT firmware will be transferred to your router for the flashing process.
 * The `Firmware OpenWrt Install` column in the `Installation` table contains the download link for the recovery bin file. Download that file and save it to the folder where tftpd32 was installed and rename it to tp_recovery.bin 
 * Set your ethernet IP to a 192.168.0.225, be careful not to use 192.168.0.255 instead
 * Shutdown your router 
