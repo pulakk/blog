@@ -73,7 +73,7 @@ up and accessing a single camera through the internet.
 
 Inventory -
 * Router: [TP-Link MR3020](https://www.tp-link.com/us/home-networking/3g-4g-router/tl-mr3020/#overview)
- (USB Port for 3G/4G Dongle + 1 Ethernet Port + WiFi)
+ (USB for 3G/4G Dongle + Ethernet + WiFi)
 * USB Dongle: [Huawei E3372h-607](https://consumer.huawei.com/in/support/routers/e3372h-607/) "Airtel 4G", SIM: Airtel
 * Camera: [HIKVision DS-2CD1321-I](https://cdn.cnetcontent.com/24/87/24873b9f-7f11-406c-ae4d-608b2de0c08e.pdf) 2.0MP NightVision Dome
 * PoE: [TP-LINK TL-PoE150S](https://www.tp-link.com/us/business-networking/accessory/tl-poe150s/)
