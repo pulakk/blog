@@ -72,8 +72,8 @@ up and accessing a single camera through the internet.
 ## My custom setup
 
 Inventory -
-* Router: [TP-Link MR3020](https://www.tp-link.com/us/home-networking/3g-4g-router/tl-mr3020/#overview)
- (USB for 3G/4G Dongle + Ethernet + WiFi)
+* Router: [TP-Link MR3020 v3.20](https://www.tp-link.com/in/home-networking/3g-4g-router/tl-mr3020/#overview) 
+ (USB for 3G/4G Dongle + Ethernet + WiFi) - Note: Make sure the router version is not below 3.0
 * USB Dongle: [Huawei E3372h-607](https://consumer.huawei.com/in/support/routers/e3372h-607/) "Airtel 4G", SIM: Airtel
 * Camera: [HIKVision DS-2CD1321-I](https://cdn.cnetcontent.com/24/87/24873b9f-7f11-406c-ae4d-608b2de0c08e.pdf) 2.0MP NightVision Dome
 * PoE: [TP-LINK TL-PoE150S](https://www.tp-link.com/us/business-networking/accessory/tl-poe150s/)
@@ -84,3 +84,21 @@ Software setup -
 * Wireguard Client: OpenWRT opkg installation; configured through LuCI
 * Wireguard VPN Server on Digital Ocean droplet
 * Custom domain name pointing to Digital Ocean droplet (Optional)
+
+## Steps
+### Flashing router with OpenWRT firmware
+Follow [OpenWRT tutorial for flashing firmware for MR3020 V3](https://openwrt.org/toh/tp-link/tl-mr3020_v3). Leave the `Install OpenWRT (Generic Explanation)` link and go straight to the `Configure a TFTP server as follows:` portion which is the installation process for your MR3020 v3 router. There are numerous tutorials on youtube as well which show you how to install OpenWRT firmware to MR3020 router via TFTP. The process is described briefly below -
+
+* Make sure you have a PC with an Ethernet port to connect to the router as wireless interface will be disabled after flashing process and you will not be able to connect to the router wirelessly
+* The `Firmware OpenWrt Install` column in the `Installation` table contains the download link for the recovery bin file. Download that and keep it saved for now.
+* Download and install `Tftpd32-4.60-setup.exe` from [Pulpstone](https://pulpstone.pw/tools/) if you have a windows PC, else you'll find other links for your OS as well. [TFTP] (https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol) is the protocol through which the OpenWRT firmware will be transferred to your router for the flashing process.
+* Copy the recovery bin file to the tftpd32 folder and rename it to tp_recovery.bin 
+* Set your ethernet IP to a 192.168.0.225, be careful not to use 192.168.0.255 instead
+* Shutdown your router 
+* Start the router while holding down the reset button present on it. Your router will leds will blink, indicating that it's in reset mode.
+* Start the tftpd32 process immediately. 
+* In the tftpd UI, within 4-5 seconds you'll see the tp_recovery.bin file being transferred. If its not being transferred, recheck the tftpd server and your ethernet IP address are setup correctly.
+* If the transfer is successful, after some time your router will stop blinking and will be ready for configuration.
+* Change your ethernet IP setup back to DHCP and open 192.168.1.1 on your browser. Login via user `root` and password `openwrt`. 
+
+You've successfully flashed your router with the OpenWRT Firmware.
