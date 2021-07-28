@@ -94,7 +94,7 @@ Read through the official [tutorial for flashing OpenWRT firmware to an MR3020 V
 * The `Firmware OpenWrt Install` column in the `Installation` table contains the download link for the recovery bin file. Download that file and save it to the folder where tftpd32 was installed and rename it to tp_recovery.bin 
 * Set your ethernet IP to 192.168.0.225, be careful not to use 192.168.0.255 instead.
 * Shutdown your router 
-* Restart the router while holding down the reset button which is present on top. Your router will leds will blink, indicating that it's in reset mode.
+* Restart the router while holding down the reset button which is present on top. Your router LEDs will blink, indicating that it's in reset mode.
 * Start the tftpd32 process immediately. 
 * In the tftpd UI, within 4-5 seconds you'll see the tp_recovery.bin file being transferred. If its not being transferred, recheck the tftpd server and your ethernet IP address are setup correctly.
 * If the transfer is successful, after some time your router will stop blinking and will be ready for configuration.
