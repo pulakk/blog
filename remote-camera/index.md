@@ -123,6 +123,10 @@ You may try using the one of the following tutorials present there:
 * [NCM](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_ncm)
 * [RNDIS](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_rndis)
 
+Which tutorial will work for you depends on what protocol your 
+Modem supports (UMTS, NCM, RNDIS, CDC Ethernet) for connecting to your 
+router and whether it provides the internet service through 3G or 4G/LTE. 
+
 Note: If you're following the tutorial for the setup, try to use the Router's web UI to
 create the Interface for your USB Modem. Fields like the `Protocol`, `Modem Device`, and `Service Type`
 will let you know whether the USB has connected to the router properly through the 
@@ -134,10 +138,6 @@ setup is working properly, rather than manually adding an interface to `/etc/con
 in the the [Network configuration](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_ncm#network_configuration)
 sections, where you have to depend entirely on kernel and system logs to know 
 whether your device is connected properly.
-
-Which tutorial will work for you depends on what protocol your 
-Modem supports (UMTS, NCM, RNDIS, CDC Ethernet) for connecting to your 
-router and whether it provides the internet service through 3G or 4G/LTE. 
 
 If you want to manually check the supported protocol in your modem, you can send AT commands to communicate
 with the Dongle. This is not a mandatory step as you can simply try the tutorials mentioned
