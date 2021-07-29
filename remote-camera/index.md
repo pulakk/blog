@@ -129,8 +129,8 @@ If you want to manually check the supported protocol in your modem, you can send
 with the Dongle. This is not a mandatory step as you can simply try the tutorials mentioned
 above and see which one works, but it might help you get a direction on which one to try first.
 The OpenWRT tutorial on sending [AT Commands](https://openwrt.org/docs/guide-user/network/wan/wwan/at_commands) to 
-your router can help you get started. You can use `lsusb` command from the OpenWRT terminal
-and the `dmesg` command to access kernel logs to see if your USB Dongle is able to connect
+your router can help you get started. On the OpenWRT terminal, you can use the `lsusb` command
+and the `dmesg` command (kernel logs) to see if your USB Dongle is able to connect
 properly to your router. After it is connected, you may send AT commands using `socat - /dev/ttyUSB<number>`.
 
 My E3372h-607 modem did not support `AT^PORTMODE?` command so I was not able to move forward with 
