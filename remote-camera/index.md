@@ -201,6 +201,7 @@ wg genkey | tee -a /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/pu
 
 #### Create config for wireguard interface
 Create the wireguard interface config file and open it.
+
 ```
 mkdir /etc/wireguard/ && touch /etc/wireguard/wg0.conf
 nano /etc/wireguard/wg0.conf
@@ -230,6 +231,8 @@ with the IP address of the Digital ocean droplet that you created and are logged
 `eth0` with the interface through which your droplet accesses the internet.
 
 #### Start the wireguard server
-```systemctl start wg-quick@wg0```
+```
+systemctl start wg-quick@wg0
+```
 
 ### Setting up Wireguard VPN Client on the router
