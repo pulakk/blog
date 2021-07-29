@@ -88,6 +88,7 @@ Software setup -
 * Custom domain name pointing to Digital Ocean droplet (Optional)
 
 ## Steps
+
 ### Flashing router with OpenWRT firmware
 Read through the official [tutorial for flashing OpenWRT firmware to an MR3020 V3 router](https://openwrt.org/toh/tp-link/tl-mr3020_v3). Skip the `Install OpenWRT (Generic Explanation)` link (trying to install the firmware from your MR3020 v3 router's web interface won't work as it does not accept flash firmware from external sources) and go straight to the `Configure a TFTP server as follows:` portion. There are numerous tutorials on youtube as well which show you how to install OpenWRT firmware on an MR3020 router via TFTP. The process is described briefly below -
 
@@ -103,3 +104,9 @@ Read through the official [tutorial for flashing OpenWRT firmware to an MR3020 V
 * Change your ethernet IP setup back to DHCP and open 192.168.1.1 on your browser. Login via user `root` and password `openwrt`. 
 
 You've successfully flashed your router with the OpenWRT Firmware.
+
+### Setting up Huawei E3372h-607 USB Modem
+
+### Creating WireGuard VPN Server through Digital Ocean
+
+### Setting up Wireguard VPN Client on the router
