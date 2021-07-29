@@ -121,10 +121,22 @@ You may try using the one of the following tutorials present there:
 * [3G / UMTS](https://openwrt.org/docs/guide-user/network/wan/wwan/3gdongle)
 * [CDC Ethernet](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_cdc)
 * [LTE / QMI](https://openwrt.org/docs/guide-user/network/wan/wwan/ltedongle)
-* [NCM](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_rndis)
+* [NCM](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_ncm)
 * [RNDIS](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_rndis)
 
-It depends on what protocol your Modem supports (UMTS, NCM, RNDIS, CDC Ethernet) for connecting to your 
+Note: If you're following the tutorial for the setup, try to use the Router's web UI to
+create the Interface for your USB Modem. Fields like the `Protocol`, `Modem Device`, and `Service Type`
+will let you know whether the USB has connected to the router properly through the 
+drivers that you installed. If it is connected, you'll see fields like `/dev/tty/USB0`,
+`/dev/cdc-wm0` etc. being listed on the `Modem Device` field, and `NCM`, `QMI` etc. being
+listed on the `Protocol` field when you try to create the interface. If the device is not configured
+properly you will not see these options on the UI. This is a better feedback on whether your 
+setup is working properly, rather than directly an interface to `/etc/config/network` as indicated
+in the the [Network configuration](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_ncm#network_configuration)
+sections, where you have to confirm the connectivity only by checking kernel or system logs.
+
+Which tutorial will work for you depends on what protocol your 
+Modem supports (UMTS, NCM, RNDIS, CDC Ethernet) for connecting to your 
 router and whether it provides the internet service through 3G or 4G/LTE. 
 
 If you want to manually check the supported protocol in your modem, you can send AT commands to communicate
@@ -176,9 +188,7 @@ daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
 
 You'll see similar kernel and system logs for other protocols as well.
 
-#### (b) Creating NCM Interface for the USB Modem
-
-### Creating WireGuard VPN Server through Digital Ocean
+### Creating WireGuard VPN Server through on Digital Ocean
 Sign up / Log in to Digital ocean and create a droplet. You can use the basic ubuntu droplet 
 which will cost you close to `$5` per month.
 Log into the machine and follow the steps mentioned below.
