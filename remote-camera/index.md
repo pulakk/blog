@@ -143,7 +143,7 @@ able to register the usb device.
 huawei_cdc_ncm 1-1:1.2: cdc-wdm0: USB WDM device
 huawei_cdc_ncm 1-1:1.2 wwan0: register 'huawei_cdc_ncm' at usb-101c0000.ehci-1, Huawei CDC NCM device, ...
 ```
-The system logs also showed that the Dongle was able to obtain a DHCP lease for internet from the ISP
+The system logs also showed that the Dongle was able to obtain a DHCP lease for internet from the ISP.
 ```
 daemon.notice netifd: E3372_Dongle (1733): sending -> AT
 daemon.notice netifd: E3372_Dongle (1733): sending -> ATZ
@@ -192,9 +192,7 @@ daemon.notice netifd: Interface 'wg0' is setting up now
 daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
 ```
 
-. Most
-modems nowadays support NCM protocol so it should work for you as well, but if it doesn't
-simply try out one of the other tutorials.
+You'll see similar kernel and system logs for other protocols as well.
 
 ### Creating WireGuard VPN Server through Digital Ocean
 
