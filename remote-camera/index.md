@@ -192,7 +192,7 @@ In case the line is not present, add it and then save the file. run
 ```sysctl -p```
 You should see the `net.ipv4.ip_forward=1` line printed on the console.
 
-### Install wireguard
+#### Install wireguard
 ```
 apt update && apt upgrade && apt install wireguard
 ```
