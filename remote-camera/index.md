@@ -241,7 +241,7 @@ be created later when we generate keys for the wireguard client in the router.
 
 #### (e) Start the wireguard server
 Since the `<PUBLIC-KEY-OF-ROUTER>` is not generated yet, this step should be done after the client is setup.
-Once the keys are generated in the router as mentioned below, you can run this command.
+Once the keys are generated in the router (described later), you can run this command.
 ```
 systemctl start wg-quick@wg0
 ```
