@@ -60,7 +60,7 @@ This is clearly a hassle, given that the modem might be a USB dongle or an In-bu
 one. Dongles too might support multiple protocols ranging from 3G over
 PPP/UMTS, QMI, NCM, RDNIS, CDC over ethernet and might provide the service through 3G or LTE.
 This gives rise to a multitude of possibilies and you might end up in a sea of trial
-and errors for hours before figuring out the right configuration for your modem.
+and error for hours before figuring out the right configuration for your modem.
 
 Accessing the camera remotely this point on, is just a matter of forwarding ports and
 changing firewall rules.
