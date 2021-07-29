@@ -197,7 +197,15 @@ You should see the `net.ipv4.ip_forward=1` line printed on the console.
 apt update && apt upgrade && apt install wireguard
 ```
 #### Generate private and public keys
+```
 wg genkey | tee -a /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publickey
+```
+You can view the keys using 
+```
+cat /etc/wireguard/privatekey
+cat /etc/wireguard/publickey
+```
+You'll need this public key when we create the wireguard client on the router.
 
 #### Create config for wireguard interface
 Create the wireguard interface config file and open it.
@@ -222,13 +230,14 @@ PostDown = iptables -t nat -D PREROUTING -p tcp -i eth0 '!' --dport 22 -j DNAT -
 PostDown = iptables -t nat -D PREROUTING -p udp -i eth0 '!' --dport 51820 -j DNAT --to-destination 10.0.0.2;
 
 [Peer]
-PublicKey = 
+PublicKey = <PUBLIC-KEY-OF-ROUTER>
 AllowedIPs = 10.0.0.2/32
 ```
 
-Replace <PRIVATE-KEY-GENERATE-ABOVE> with the private that was generated earlier and <DIGITAL-OCEAN-DROPLET-IP-ADDRESS>
+Replace `<PRIVATE-KEY-GENERATE-ABOVE>` with the private that was generated earlier and `<DIGITAL-OCEAN-DROPLET-IP-ADDRESS>`
 with the IP address of the Digital ocean droplet that you created and are logged into. You may need to change
-`eth0` with the interface through which your droplet accesses the internet.
+`eth0` with the interface through which your droplet accesses the internet. The `<PUBLIC-KEY-OF-ROUTER>` will
+be created later when we generate keys for the wireguard client in the router.
 
 #### Start the wireguard server
 ```
@@ -236,3 +245,43 @@ systemctl start wg-quick@wg0
 ```
 
 ### Setting up Wireguard VPN Client on the router
+
+#### Installing wireguard on router
+Connect to the router through `ssh` or `PuTTY` and install wireguard using
+```
+opkg update
+opkg install wireguard luci-proto-wireguard
+reboot
+```
+
+#### Generate keys
+```
+wg genkey | tee privatekey | wg pubkey > publickey
+```
+You can view the keys using 
+```
+cat privatekey
+cat publickey
+```
+Replace `<PUBLIC-KEY-OF-ROUTER>` in the Digital ocean wireguard server config with this public key generated.
+
+#### Configure WireGuard client
+Connect to the router's web interface from the browser at `192.168.1.1`
+* Log in and go to `Network > Interfaces > Add New Interface`
+* Set the protocol as `Wireguard VPN` (if the installation of `luci-proto-wireguard` 
+did not complete successfully then the `Wireguard VPN` protocol will not be found
+in the list)
+* Give it any name like WG0 and click on `Create Interface`
+* Enter the private key that was generated earlier and add `10.0.0.2/24` to IP Addresses field
+and click the `+` button
+* Go to `firewall` settings tab and set `Create / Assign Firewall zone` to `wan`
+* Go to `peer` tab, and paste the pulic key generated on the Digital ocean droplet when setting up the wireguard server.
+`Preshared key` will remain empty. Set the allowed IPs to `0.0.0.0/0` and the `Endpoint host` to the Public IP Address
+of the Digital Ocean droplet. Check the box on `Router allowed IPS`. You may set the persistent keep alive to `25`.
+* Click `save`
+
+The wireguard client and server are setup and you should be able to test the connection using
+```ping 10.0.0.2```
+or ```wg show```
+on the digital ocean droplet. `Status > Wireguard Status` should show you the 
+status of the wireguard client on the router.
