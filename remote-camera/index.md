@@ -201,9 +201,13 @@ tutorial link above, so you may refer to the `VPS Setup` section through that tu
 
 #### (a) System config
 Uncomment the `net.ipv4.ip_forward=1` line in the system config file using
-```nano /etc/sysctl.conf```
+```
+nano /etc/sysctl.conf
+```
 In case the line is not present, add it and then save the file. run
-```sysctl -p```
+```
+sysctl -p
+```
 You should see the `net.ipv4.ip_forward=1` line printed on the console.
 
 #### (b) Install wireguard
