@@ -113,6 +113,88 @@ Read through the official [tutorial for flashing OpenWRT firmware to an MR3020 V
 You've successfully flashed your router with the OpenWRT Firmware.
 
 ### Setting up Huawei E3372h-607 USB Modem
+The [official OpenWRT tutorial for setting up WWAN connection through 3G/4G/LTE](https://openwrt.org/docs/guide-user/network/wan/wwan/start) has many options you can try.
+
+You may try using the one of the following tutorials present there: 
+* [3G / UMTS](https://openwrt.org/docs/guide-user/network/wan/wwan/3gdongle)
+* [CDC Ethernet](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_cdc)
+* [LTE / QMI](https://openwrt.org/docs/guide-user/network/wan/wwan/ltedongle)
+* [NCM](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_rndis)
+* [RNDIS](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_rndis)
+
+It depends on what protocol your Modem supports (UMTS, NCM, RNDIS, CDC Ethernet) for connecting to your 
+router and whether it provides the internet service through 3G or 4G/LTE. 
+
+If you want to manually check the supported protocol in your modem, you can send AT commands to communicate
+with the Dongle. This is not a mandatory step as you can simply try the tutorials mentioned
+above and see which one works, but it might help you get a direction on where to start first.
+The OpenWRT tutorial on sending [AT Commands](https://openwrt.org/docs/guide-user/network/wan/wwan/at_commands) to 
+your router can help you get started. You can use `lsusb` command from the OpenWRT terminal
+and the `dmesg` command to access kernel logs to see if your USB Dongle is able to connect
+properly to your router. After it is connected, you may send AT commands using `socat - /dev/ttyUSB<number>`.
+
+My E3372h-607 modem did not support `AT^PORTMODE?` command so I was not able to move forward with 
+the AT commands step. Hence, I moved ahead and tried the tutorials one by one.
+
+The 3G/UMTS, CDC Ethernet and the RNDIS tutorials did not work for me. But finally the NCM tutorial 
+worked out well and I could see the following kernel logs which indicated that the driver was
+able to register the usb device.
+```
+huawei_cdc_ncm 1-1:1.2: cdc-wdm0: USB WDM device
+huawei_cdc_ncm 1-1:1.2 wwan0: register 'huawei_cdc_ncm' at usb-101c0000.ehci-1, Huawei CDC NCM device, ...
+```
+The system logs also showed that the Dongle was able to obtain a DHCP lease for internet from the ISP
+```
+daemon.notice netifd: E3372_Dongle (1733): sending -> AT
+daemon.notice netifd: E3372_Dongle (1733): sending -> ATZ
+daemon.notice netifd: E3372_Dongle (1733): sending -> ATQ0
+daemon.notice netifd: E3372_Dongle (1733): sending -> ATV1
+daemon.notice netifd: E3372_Dongle (1733): sending -> ATE1
+daemon.info dnsmasq[1289]: exiting on receipt of SIGTERM
+daemon.info dnsmasq[2042]: started, version 2.80 cachesize 150
+daemon.info dnsmasq[2042]: DNS service limited to local subnets
+daemon.info dnsmasq[2042]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-nettlehash no-DNSSEC no-ID loop-detect inotify dumpfile
+daemon.info dnsmasq-dhcp[2042]: DHCP, IP range <> -- <>, lease time <>
+daemon.info dnsmasq[2042]: using local addresses only for domain test
+daemon.info dnsmasq[2042]: using local addresses only for domain onion
+daemon.info dnsmasq[2042]: using local addresses only for domain localhost
+daemon.info dnsmasq[2042]: using local addresses only for domain local
+daemon.info dnsmasq[2042]: using local addresses only for domain invalid
+daemon.info dnsmasq[2042]: using local addresses only for domain bind
+daemon.info dnsmasq[2042]: using local addresses only for domain lan
+daemon.warn dnsmasq[2042]: no servers found in /tmp/resolv.conf.auto, will retry
+daemon.info dnsmasq[2042]: read /etc/hosts - 4 addresses
+daemon.info dnsmasq[2042]: read /tmp/hosts/dhcp.cfg01411c - 2 addresses
+daemon.info dnsmasq-dhcp[2042]: read /etc/ethers - 0 addresses
+daemon.info dnsmasq[2042]: read /etc/hosts - 4 addresses
+daemon.info dnsmasq[2042]: read /tmp/hosts/dhcp.cfg01411c - 2 addresses
+daemon.info dnsmasq-dhcp[2042]: read /etc/ethers - 0 addresses
+daemon.notice netifd: E3372_Dongle (1733): sending -> ATS0=0
+daemon.notice netifd: E3372_Dongle (1733): sending -> AT+CGDCONT=1,"IP","airtelgprs.com"
+daemon.notice netifd: E3372_Dongle (1733): Configuring modem
+daemon.notice netifd: E3372_Dongle (1733): Starting network E3372_Dongle
+daemon.notice netifd: E3372_Dongle (1733): Connecting modem
+daemon.notice netifd: E3372_Dongle (1733): sending -> AT^NDISDUP=1,1,"airtelgprs.com"
+daemon.notice netifd: E3372_Dongle (1733): Setting up wwan0
+daemon.notice netifd: Interface 'E3372_Dongle' is now up
+daemon.notice netifd: Network device 'wwan0' link is up
+daemon.notice netifd: Network alias 'wwan0' link is up
+daemon.notice netifd: Interface 'E3372_Dongle_4' is enabled
+daemon.notice netifd: Interface 'E3372_Dongle_4' has link connectivity
+daemon.notice netifd: Interface 'E3372_Dongle_4' is setting up now
+user.notice firewall: Reloading firewall due to ifup of E3372_Dongle (wwan0)
+daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: started, v1.30.1
+daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: sending discover
+daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: sending discover
+daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: sending select for <some-shared-space-ip>
+daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: lease of <some-shared-space-ip> obtained, lease time <duration>
+daemon.notice netifd: Interface 'wg0' is setting up now
+daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
+```
+
+. Most
+modems nowadays support NCM protocol so it should work for you as well, but if it doesn't
+simply try out one of the other tutorials.
 
 ### Creating WireGuard VPN Server through Digital Ocean
 
