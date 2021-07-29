@@ -302,8 +302,13 @@ and click the `+` button
 of the Digital Ocean droplet. Check the box on `Router allowed IPS`. You may set the persistent keep alive to `25`.
 * Click `save`
 
-The wireguard client and server are setup and you should be able to test the connection using
-```ping 10.0.0.2```
-or ```wg show```
-on the digital ocean droplet. `Status > Wireguard Status` should show you the 
-status of the wireguard client on the router.
+The wireguard client and server are setup and you should be able to test the connection on the server using
+```
+ping 10.0.0.2
+```
+or 
+```
+wg show
+```
+You can test the wireguard client on the router by going to `Status > Wireguard Status` on the
+router's UI.
