@@ -127,7 +127,7 @@ router and whether it provides the internet service through 3G or 4G/LTE.
 
 If you want to manually check the supported protocol in your modem, you can send AT commands to communicate
 with the Dongle. This is not a mandatory step as you can simply try the tutorials mentioned
-above and see which one works, but it might help you get a direction on where to start first.
+above and see which one works, but it might help you get a direction on which one to try first.
 The OpenWRT tutorial on sending [AT Commands](https://openwrt.org/docs/guide-user/network/wan/wwan/at_commands) to 
 your router can help you get started. You can use `lsusb` command from the OpenWRT terminal
 and the `dmesg` command to access kernel logs to see if your USB Dongle is able to connect
