@@ -219,7 +219,7 @@ Paste the following config to the file opened above.
 
 ```
 [Interface]
-PrivateKey = <PRIVATE-KEY-GENERATE-ABOVE>
+PrivateKey = <PRIVATE-KEY-OF-SERVER>
 ListenPort = 51820
 Address = 10.0.0.1/24
 
@@ -234,12 +234,14 @@ PublicKey = <PUBLIC-KEY-OF-ROUTER>
 AllowedIPs = 10.0.0.2/32
 ```
 
-Replace `<PRIVATE-KEY-GENERATE-ABOVE>` with the private that was generated earlier and `<DIGITAL-OCEAN-DROPLET-IP-ADDRESS>`
+Replace `<PRIVATE-KEY-OF-SERVER>` with the private key that was generated earlier and `<DIGITAL-OCEAN-DROPLET-IP-ADDRESS>`
 with the IP address of the Digital ocean droplet that you created and are logged into. You may need to change
 `eth0` with the interface through which your droplet accesses the internet. The `<PUBLIC-KEY-OF-ROUTER>` will
 be created later when we generate keys for the wireguard client in the router.
 
 #### (e) Start the wireguard server
+Since the `<PUBLIC-KEY-OF-ROUTER>` is not generated yet, this step should be done after the client is setup.
+Once the keys are generated in the router as mentioned below, you can run this command.
 ```
 systemctl start wg-quick@wg0
 ```
@@ -263,7 +265,7 @@ You can view the keys using
 cat privatekey
 cat publickey
 ```
-Replace `<PUBLIC-KEY-OF-ROUTER>` in the Digital ocean wireguard server config with this public key generated.
+Replace `<PUBLIC-KEY-OF-ROUTER>` in the Digital ocean wireguard server config with this public key.
 
 #### (c) Configure WireGuard client
 Connect to the router's web interface from the browser at `192.168.1.1`
