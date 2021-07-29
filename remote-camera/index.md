@@ -185,18 +185,18 @@ We will not follow the tutorial completely because we'll be using the already av
 router Web interface UI (LuCI) for setting up the VPN client. The VPN Server setup is same as the one provided in the
 tutorial link above, so you may refer to the `VPS Setup` section through that tutorial directly or follow along. 
 
-#### System config
+#### (a) System config
 Uncomment the `net.ipv4.ip_forward=1` line in the system config file using
 ```nano /etc/sysctl.conf```
 In case the line is not present, add it and then save the file. run
 ```sysctl -p```
 You should see the `net.ipv4.ip_forward=1` line printed on the console.
 
-#### Install wireguard
+#### (b) Install wireguard
 ```
 apt update && apt upgrade && apt install wireguard
 ```
-#### Generate private and public keys
+#### (c) Generate private and public keys
 ```
 wg genkey | tee -a /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publickey
 ```
@@ -207,7 +207,7 @@ cat /etc/wireguard/publickey
 ```
 You'll need this public key when we create the wireguard client on the router.
 
-#### Create config for wireguard interface
+#### (d) Create config for wireguard interface
 Create the wireguard interface config file and open it.
 
 ```
@@ -239,14 +239,14 @@ with the IP address of the Digital ocean droplet that you created and are logged
 `eth0` with the interface through which your droplet accesses the internet. The `<PUBLIC-KEY-OF-ROUTER>` will
 be created later when we generate keys for the wireguard client in the router.
 
-#### Start the wireguard server
+#### (e) Start the wireguard server
 ```
 systemctl start wg-quick@wg0
 ```
 
 ### Setting up Wireguard VPN Client on the router
 
-#### Installing wireguard on router
+#### (a) Installing wireguard on router
 Connect to the router through `ssh` or `PuTTY` and install wireguard using
 ```
 opkg update
@@ -254,7 +254,7 @@ opkg install wireguard luci-proto-wireguard
 reboot
 ```
 
-#### Generate keys
+#### (b) Generate keys
 ```
 wg genkey | tee privatekey | wg pubkey > publickey
 ```
@@ -265,7 +265,7 @@ cat publickey
 ```
 Replace `<PUBLIC-KEY-OF-ROUTER>` in the Digital ocean wireguard server config with this public key generated.
 
-#### Configure WireGuard client
+#### (c) Configure WireGuard client
 Connect to the router's web interface from the browser at `192.168.1.1`
 * Log in and go to `Network > Interfaces > Add New Interface`
 * Set the protocol as `Wireguard VPN` (if the installation of `luci-proto-wireguard` 
