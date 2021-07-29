@@ -150,25 +150,6 @@ daemon.notice netifd: E3372_Dongle (1733): sending -> ATZ
 daemon.notice netifd: E3372_Dongle (1733): sending -> ATQ0
 daemon.notice netifd: E3372_Dongle (1733): sending -> ATV1
 daemon.notice netifd: E3372_Dongle (1733): sending -> ATE1
-daemon.info dnsmasq[1289]: exiting on receipt of SIGTERM
-daemon.info dnsmasq[2042]: started, version 2.80 cachesize 150
-daemon.info dnsmasq[2042]: DNS service limited to local subnets
-daemon.info dnsmasq[2042]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-nettlehash no-DNSSEC no-ID loop-detect inotify dumpfile
-daemon.info dnsmasq-dhcp[2042]: DHCP, IP range <> -- <>, lease time <>
-daemon.info dnsmasq[2042]: using local addresses only for domain test
-daemon.info dnsmasq[2042]: using local addresses only for domain onion
-daemon.info dnsmasq[2042]: using local addresses only for domain localhost
-daemon.info dnsmasq[2042]: using local addresses only for domain local
-daemon.info dnsmasq[2042]: using local addresses only for domain invalid
-daemon.info dnsmasq[2042]: using local addresses only for domain bind
-daemon.info dnsmasq[2042]: using local addresses only for domain lan
-daemon.warn dnsmasq[2042]: no servers found in /tmp/resolv.conf.auto, will retry
-daemon.info dnsmasq[2042]: read /etc/hosts - 4 addresses
-daemon.info dnsmasq[2042]: read /tmp/hosts/dhcp.cfg01411c - 2 addresses
-daemon.info dnsmasq-dhcp[2042]: read /etc/ethers - 0 addresses
-daemon.info dnsmasq[2042]: read /etc/hosts - 4 addresses
-daemon.info dnsmasq[2042]: read /tmp/hosts/dhcp.cfg01411c - 2 addresses
-daemon.info dnsmasq-dhcp[2042]: read /etc/ethers - 0 addresses
 daemon.notice netifd: E3372_Dongle (1733): sending -> ATS0=0
 daemon.notice netifd: E3372_Dongle (1733): sending -> AT+CGDCONT=1,"IP","airtelgprs.com"
 daemon.notice netifd: E3372_Dongle (1733): Configuring modem
