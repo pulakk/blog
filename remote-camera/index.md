@@ -69,7 +69,7 @@ I had faced the same problems on my end, starting with clueless guesses on
 the choice of the router and the camera
 and spending hours figuring out solutions for all these problems. Hopefully this tutorial
 should either straighten up the process for you or scare you away from the humongous difficulty of setting
-up and accessing a single camera through the internet.
+up and accessing a single camera through the internet or both. Either way my purpose is served.
 
 ## My custom setup
 
