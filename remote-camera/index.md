@@ -81,9 +81,10 @@ Inventory -
 * PoE: [TP-LINK TL-PoE150S](https://www.tp-link.com/us/business-networking/accessory/tl-poe150s/)
 
 Choosing this setup meant that the internet access from my router would be behind a CGNAT. So, DDNS did not work for me
-and I had to setup a wireguard VPN tunnel from my router to a hosted server to access my router through that server. I
-picked Digital ocean but any other cloud provider should do, as long as you can access the server
-through your terminal via SSH or PuTTY. So here goes my software setup to solve the problem.
+and I had to create a wireguard VPN tunnel from my router to a hosted server to access my router
+through that server instead. I
+picked Digital ocean but any other cloud provider should do. So here's what I did for 
+accessing the camera behind the router remotely.
 
 Software setup -
 * OpenWRT firmware on the router
