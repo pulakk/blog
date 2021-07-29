@@ -113,6 +113,8 @@ Read through the official [tutorial for flashing OpenWRT firmware to an MR3020 V
 You've successfully flashed your router with the OpenWRT Firmware.
 
 ### Setting up Huawei E3372h-607 USB Modem
+
+#### (a) Setting up drivers
 The [official OpenWRT tutorial for setting up WWAN connection through 3G/4G/LTE](https://openwrt.org/docs/guide-user/network/wan/wwan/start) has many options you can try.
 
 You may try using the one of the following tutorials present there: 
@@ -173,6 +175,8 @@ daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
 ```
 
 You'll see similar kernel and system logs for other protocols as well.
+
+#### (b) Creating NCM Interface for the USB Modem
 
 ### Creating WireGuard VPN Server through Digital Ocean
 Sign up / Log in to Digital ocean and create a droplet. You can use the basic ubuntu droplet 
