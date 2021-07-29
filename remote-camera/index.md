@@ -127,18 +127,6 @@ Which tutorial will work for you depends on what protocol your
 Modem supports (UMTS, NCM, RNDIS, CDC Ethernet) for connecting to your 
 router and whether it provides the internet service through 3G or 4G/LTE. 
 
-Note: If you're following the tutorial for the setup, try to use the Router's web UI to
-create the Interface for your USB Modem. Fields like the `Protocol`, `Modem Device`, and `Service Type`
-will let you know whether the USB has connected to the router properly through the 
-drivers that you installed. If it is connected, you'll see fields like `/dev/tty/USB0`,
-`/dev/cdc-wm0` etc. being listed on the `Modem Device` field, and `NCM`, `QMI` etc. being
-listed on the `Protocol` field when you try to create the interface. If the device is not configured
-properly you will not see these options on the UI. This is a better feedback on whether your 
-setup is working properly, rather than manually adding an interface to `/etc/config/network` as indicated
-in the the [Network configuration](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_ncm#network_configuration)
-sections, where you have to depend entirely on kernel and system logs to know 
-whether your device is connected properly.
-
 If you want to manually check the supported protocol in your modem, you can send AT commands to communicate
 with the Dongle. This is not a mandatory step as you can simply try the tutorials mentioned
 above and see which one works, but it might help you get a direction on which one to try first.
@@ -187,6 +175,18 @@ daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
 ```
 
 You'll see similar kernel and system logs for other protocols as well.
+
+Note: If you're following the tutorial for the setup, try to use the Router's web UI to
+create the Interface for your USB Modem. Fields like the `Protocol`, `Modem Device`, and `Service Type`
+will let you know whether the USB has connected to the router properly through the 
+drivers that you installed. If it is connected, you'll see fields like `/dev/tty/USB0`,
+`/dev/cdc-wm0` etc. being listed on the `Modem Device` field, and `NCM`, `QMI` etc. being
+listed on the `Protocol` field when you try to create the interface. If the device is not configured
+properly you will not see these options on the UI. This is a better feedback on whether your 
+setup is working properly, rather than manually adding an interface to `/etc/config/network` as indicated
+in the the [Network configuration](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_ncm#network_configuration)
+sections, where you have to depend entirely on kernel and system logs to know 
+whether your device is connected properly.
 
 ### Creating WireGuard VPN Server through on Digital Ocean
 Sign up / Log in to Digital ocean and create a droplet. You can use the basic ubuntu droplet 
