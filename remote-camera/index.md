@@ -86,7 +86,7 @@ through that server instead. I
 picked Digital ocean but any other cloud provider should do. So here's what I did for 
 accessing the camera behind the router remotely.
 
-Software setup -
+Overview -
 * OpenWRT firmware on the router
 * USB Dongle Protocol: NCM; Service: LTE
 * Wireguard Client: OpenWRT opkg installation; configured through LuCI
