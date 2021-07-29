@@ -169,7 +169,6 @@ daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: sending discover
 daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: sending discover
 daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: sending select for <some-shared-space-ip>
 daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: lease of <some-shared-space-ip> obtained, lease time <duration>
-daemon.notice netifd: Interface 'wg0' is setting up now
 daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
 ```
 
