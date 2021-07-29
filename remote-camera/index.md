@@ -49,7 +49,7 @@ remotely as long as you can access the hosted server remotely.
 This brings us to another problem. Not all routers have VPN client support. Many routers, 
 like [ones from TP-Link](https://community.tp-link.com/en/home/forum/topic/168500)
 , provide only VPN Server as an option.
-So you can either carefully choose a router which provides that, or flash a 
+So you can either carefully choose a router which supports VPN Clients, or flash a 
 router with an alternative firmware like [OpenWRT](https://openwrt.org/) or 
 [DDWRT](https://dd-wrt.com/support/router-database/). The open source alternatives
 support most routers and have plenty of tutorials on how to install their firmware.
