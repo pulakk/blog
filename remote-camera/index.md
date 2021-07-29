@@ -87,6 +87,11 @@ Software setup -
 * Wireguard VPN Server on Digital Ocean droplet
 * Custom domain name pointing to Digital Ocean droplet (Optional)
 
+Choosing this setup meant that the internet access from my router would be behind a CGNAT. So, DDNS did not work for me
+and I had to setup a wireguard VPN tunnel from my router to a hosted server to access my router through that server. I
+picked Digital ocean but any other cloud provider should do, as long as you can access the server
+through your terminal via SSH or PuTTY.
+
 ## Steps
 
 ### Flashing router with OpenWRT firmware
