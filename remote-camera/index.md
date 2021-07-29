@@ -196,7 +196,7 @@ You should see the `net.ipv4.ip_forward=1` line printed on the console.
 ```
 apt update && apt upgrade && apt install wireguard
 ```
-#### (c) Generate private and public keys
+#### (c) Generate private and public keys for the Server
 ```
 wg genkey | tee -a /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publickey
 ```
@@ -254,7 +254,7 @@ opkg install wireguard luci-proto-wireguard
 reboot
 ```
 
-#### (b) Generate keys
+#### (b) Generate private and public keys for the router
 ```
 wg genkey | tee privatekey | wg pubkey > publickey
 ```
@@ -272,10 +272,11 @@ Connect to the router's web interface from the browser at `192.168.1.1`
 did not complete successfully then the `Wireguard VPN` protocol will not be found
 in the list)
 * Give it any name like WG0 and click on `Create Interface`
-* Enter the private key that was generated earlier and add `10.0.0.2/24` to IP Addresses field
+* Enter the private key of the router that was generated earlier.
+* Add `10.0.0.2/24` to IP Addresses field
 and click the `+` button
 * Go to `firewall` settings tab and set `Create / Assign Firewall zone` to `wan`
-* Go to `peer` tab, and paste the pulic key generated on the Digital ocean droplet when setting up the wireguard server.
+* Go to `peer` tab, and paste the pulic key of the Digital Ocean server.
 `Preshared key` will remain empty. Set the allowed IPs to `0.0.0.0/0` and the `Endpoint host` to the Public IP Address
 of the Digital Ocean droplet. Check the box on `Router allowed IPS`. You may set the persistent keep alive to `25`.
 * Click `save`
