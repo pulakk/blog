@@ -265,7 +265,8 @@ You can view the keys using
 cat privatekey
 cat publickey
 ```
-Replace `<PUBLIC-KEY-OF-ROUTER>` in the Digital ocean wireguard server config with this public key.
+Replace `<PUBLIC-KEY-OF-ROUTER>` in the Digital ocean wireguard server config with this public key. You can now
+start the wireguard server using the `systemctl` command described above.
 
 #### (c) Configure WireGuard client
 Connect to the router's web interface from the browser at `192.168.1.1`
