@@ -175,5 +175,61 @@ daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
 You'll see similar kernel and system logs for other protocols as well.
 
 ### Creating WireGuard VPN Server through Digital Ocean
+Sign up / Log in to Digital ocean and create a droplet. You can use the basic ubuntu droplet 
+which will cost you close to `$5` per month.
+Log into the machine and follow the steps mentioned below.
+
+[This tutorial on setting up a VPS](https://reposhub.com/python/security/mochman-Bypass_CGNAT.html) was
+used as a reference while setting up wireguard server and client.
+We will not follow the tutorial completely because we'll be using the already available OpenWRT 
+router Web interface UI (LuCI) for setting up the VPN client. The VPN Server setup is same as the one provided in the
+tutorial link above, so you may refer to the `VPS Setup` section through that tutorial directly or follow along. 
+
+#### System config
+Uncomment the `net.ipv4.ip_forward=1` line in the system config file using
+```nano /etc/sysctl.conf```
+In case the line is not present, add it and then save the file. run
+```sysctl -p```
+You should see the `net.ipv4.ip_forward=1` line printed on the console.
+
+### Install wireguard
+```
+apt update && apt upgrade && apt install wireguard
+```
+#### Generate private and public keys
+wg genkey | tee -a /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publickey
+
+#### Create config for wireguard interface
+Create the wireguard interface config file and open it.
+```
+mkdir /etc/wireguard/ && touch /etc/wireguard/wg0.conf
+nano /etc/wireguard/wg0.conf
+```
+
+Paste the following config to the file opened above.
+
+```
+[Interface]
+PrivateKey = <PRIVATE-KEY-GENERATE-ABOVE>
+ListenPort = 51820
+Address = 10.0.0.1/24
+
+PostUp = iptables -t nat -A PREROUTING -p tcp -i eth0 '!' --dport 22 -j DNAT --to-destination 10.0.0.2; iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to-source <DIGITAL-OCEAN-DROPLET-IP-ADDRESS>
+PostUp = iptables -t nat -A PREROUTING -p udp -i eth0 '!' --dport 51820 -j DNAT --to-destination 10.0.0.2;
+
+PostDown = iptables -t nat -D PREROUTING -p tcp -i eth0 '!' --dport 22 -j DNAT --to-destination 10.0.0.2; iptables -t nat -D POSTROUTING -o eth0 -j SNAT --to-source  <DIGITAL-OCEAN-DROPLET-IP-ADDRESS>
+PostDown = iptables -t nat -D PREROUTING -p udp -i eth0 '!' --dport 51820 -j DNAT --to-destination 10.0.0.2;
+
+[Peer]
+PublicKey = 
+AllowedIPs = 10.0.0.2/32
+```
+
+Replace <PRIVATE-KEY-GENERATE-ABOVE> with the private that was generated earlier and <DIGITAL-OCEAN-DROPLET-IP-ADDRESS>
+with the IP address of the Digital ocean droplet that you created and are logged into. You may need to change
+`eth0` with the interface through which your droplet accesses the internet.
+
+#### Start the wireguard server
+```systemctl start wg-quick@wg0```
 
 ### Setting up Wireguard VPN Client on the router
