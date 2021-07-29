@@ -176,7 +176,7 @@ daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
 
 You'll see similar kernel and system logs for other protocols as well.
 
-Note: If you're following the tutorial for the setup, try to use the Router's web UI to
+Note: Try to use the Router's web UI to
 create the Interface for your USB Modem. Fields like the `Protocol`, `Modem Device`, and `Service Type`
 will let you know whether the USB has connected to the router properly through the 
 drivers that you installed. If it is connected, you'll see fields like `/dev/tty/USB0`,
