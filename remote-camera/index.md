@@ -130,9 +130,10 @@ drivers that you installed. If it is connected, you'll see fields like `/dev/tty
 `/dev/cdc-wm0` etc. being listed on the `Modem Device` field, and `NCM`, `QMI` etc. being
 listed on the `Protocol` field when you try to create the interface. If the device is not configured
 properly you will not see these options on the UI. This is a better feedback on whether your 
-setup is working properly, rather than directly an interface to `/etc/config/network` as indicated
+setup is working properly, rather than manually adding an interface to `/etc/config/network` as indicated
 in the the [Network configuration](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_ncm#network_configuration)
-sections, where you have to confirm the connectivity only by checking kernel or system logs.
+sections, where you have to depend entirely on kernel and system logs to know 
+whether your device is connected properly.
 
 Which tutorial will work for you depends on what protocol your 
 Modem supports (UMTS, NCM, RNDIS, CDC Ethernet) for connecting to your 
