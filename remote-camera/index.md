@@ -133,8 +133,8 @@ your router can help you get started. On the OpenWRT terminal, you can use the `
 and the `dmesg` command (kernel logs) to see if your USB Dongle is able to connect
 properly to your router. After it is connected, you may send AT commands using `socat - /dev/ttyUSB<number>`.
 
-My E3372h-607 modem did not support `AT^PORTMODE?` command so I was not able to move forward with 
-the AT commands step. Hence, I moved ahead and tried the tutorials one by one.
+My E3372h-607 modem did not support `AT^PORTMODE?` command so I was not able to check which
+protocol would work. Hence, I went ahead and tried the tutorials one by one.
 
 The 3G/UMTS, CDC Ethernet and the RNDIS tutorials did not work for me. But finally the NCM tutorial 
 worked out well and I could see the following kernel logs which indicated that the driver was
