@@ -25,4 +25,4 @@ accessing the camera behind the router remotely.
 ## Steps
 
 * [Connect your router to the internet](https://pulakk.github.io/blog/remote-camera/connect-router-to-internet)
-# [Accessing your camera](https://pulakk.github.io/blog/remote-camera/accessing-camera)
+* [Accessing your camera](https://pulakk.github.io/blog/remote-camera/accessing-camera)
