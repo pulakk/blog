@@ -117,8 +117,9 @@ This gives rise to a multitude of possibilies and you might end up in a sea of t
 and error for hours before figuring out the right configuration for your modem.
 
 ### Conclusion
-Accessing the camera remotely this point on, is just a matter of forwarding ports and
-changing firewall rules.
+If you are able to access your router through the internet, connecting to your camera
+is just a matter of forwarding ports and
+changing firewall rules in the router.
 
 I had faced the same problems on my end, starting with clueless guesses on 
 the choice of the router and the camera
