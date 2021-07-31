@@ -116,16 +116,16 @@ PPP/UMTS, QMI, NCM, RDNIS, CDC over ethernet and might provide the service throu
 This gives rise to a multitude of possibilies and you might end up in a sea of trial
 and error for hours before figuring out the right configuration for your modem.
 
-### Conclusion
+### Wrapping up
 If you are able to access your router through the internet, connecting to your camera
 is just a matter of forwarding ports and
 changing firewall rules in the router.
 
-I had faced the same problems on my end, starting with clueless guesses on 
+**I had faced the same problems on my end, starting with clueless guesses on 
 the choice of the router and the camera
 and spending hours figuring out solutions for all these problems. Hopefully this tutorial
 should either straighten up the process for you or scare you away from the humongous difficulty of setting
-up and accessing a single camera through the internet or both. Either way my purpose is served.
+up and accessing a single camera through the internet. Either way my purpose is served.**
 
 ## Tutorial
 
