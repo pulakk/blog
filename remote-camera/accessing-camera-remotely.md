@@ -49,5 +49,5 @@ in the port forwarding rule set above.
 
 Enjoy!
 
-*To know more about setting up IP cameras and routers to be accessible remotely,
+*To know more about setting up your IP cameras and your router to be accessible remotely,
 visit the [Introduction](https://pulakk.github.io/blog/remote-camera/) page.*
