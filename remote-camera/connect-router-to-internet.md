@@ -1,5 +1,12 @@
 # Connecting TP-Link MR3020 router to the internet
 
+Given that my router was behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), I had to flash my TP-Link router
+with the [OpenWRT](https://openwrt.org/)
+firmware because the [router did not have support VPN Clients](https://community.tp-link.com/en/home/forum/topic/168500).
+After flashing the router with OpenWRT firmware, I had to install drivers and configure the modem
+for connecting to the internet. After the internet connectivity was setup, I had to choose a VPN client and I picked
+[Wireguard](https://www.wireguard.com/).
+
 ### Flashing router with OpenWRT firmware
 Read through the official [tutorial for flashing OpenWRT firmware to an MR3020 V3 router](https://openwrt.org/toh/tp-link/tl-mr3020_v3). Skip the `Install OpenWRT (Generic Explanation)` link (trying to install the firmware from your MR3020 v3 router's web interface won't work as it does not accept flash firmware from external sources) and go straight to the `Configure a TFTP server as follows:` portion. There are numerous tutorials on youtube as well which show you how to install OpenWRT firmware on an MR3020 router via TFTP. The process is described briefly below -
 
