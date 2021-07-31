@@ -101,7 +101,7 @@ PPP/UMTS, QMI, NCM, RDNIS, CDC over ethernet and might provide the service throu
 This gives rise to a multitude of possibilies and you might end up in a sea of trial
 and error for hours before figuring out the right configuration for your modem.
 
-### Accessing camera from router
+### Conclusion
 Accessing the camera remotely this point on, is just a matter of forwarding ports and
 changing firewall rules.
 
