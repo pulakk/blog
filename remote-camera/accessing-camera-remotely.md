@@ -3,6 +3,8 @@
 * [Previous page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet) 
 * [Home](https://pulakk.github.io/blog/remote-camera/) 
 
+---
+
 This tutorial describes how to configure your [OpenWRT](https://openwrt.org/)
 router to make an IP camera accessible externally
 from WAN. The camera used is a 
