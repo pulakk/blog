@@ -10,12 +10,15 @@ I would require VPN client support on my router to access it through a hoster se
 [Home Laptop] ----> Hosted Server <==== +
   |                 <public ip>        ||
   |                     |              ||
-  |  cannot             |              ||
- [x] access        CGNAT gateway       || VPN
-  |  private        <public ip>        || Tunnel
-  |   IP                |              ||
-  |                     |              ||
-  + - - - - - - - -  Router       <==== +
+  |  cannot access      |              ||
+ [x] router through     |              ||
+  |  CGN Gateway        |              || VPN
+  |                     |              || Tunnel
+  + - - - - - - -    CGN gateway       ||
+                    <public ip>        ||
+                        |              ||
+                        |              ||
+                     Router       <==== +
                <shared space private ip>
                         |
                      Camera
