@@ -20,7 +20,7 @@ local IP address, for e.g. `192.168.1.64`, through the browser.
 
 Open the LuCI web interface of your OpenWRT router and go to `Network > Firewall > Zones`.
 
-Add all the required interfaces like  to the WAN zone by going to `wan > Edit > Covered Networks`.
+Add all the required interfaces to the WAN zone by going to `wan > Edit > Covered Networks`.
 Set the *Allow forward to destination zones* to `lan`.
 
 ### Add port forwarding rules
