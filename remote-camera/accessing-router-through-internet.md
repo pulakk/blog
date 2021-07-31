@@ -1,8 +1,6 @@
 # Accessing TP-Link MR3020 router Remotely
 
-*If you're new to this tutorial, you may like to go through the previous pages
-to know if you actually need these steps and if so, to understand why the setup is tedious and time consuming.*
-
+Links
 * [Introduction](https://pulakk.github.io/blog/remote-camera/)
 * [Custom setup](https://pulakk.github.io/blog/remote-camera/custom-setup)
 
