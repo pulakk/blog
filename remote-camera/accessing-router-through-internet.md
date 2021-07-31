@@ -111,7 +111,7 @@ daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
 You'll see similar kernel and system logs for other protocols as well, both of which should be visible on your
 router's web UI.
 
-Note: Try to use the Router's web UI to
+*Note: Try to use the Router's web UI to
 create the Interface for your USB Modem. Fields like the `Protocol`, `Modem Device`, and `Service Type`
 will let you know whether the USB has connected to the router properly through the 
 drivers that you installed. If it is connected, you'll see fields like `/dev/tty/USB0`,
@@ -121,7 +121,10 @@ properly you will not see these options on the UI. This is a better feedback on 
 setup is working properly, rather than manually adding an interface to `/etc/config/network` as indicated
 in the the [Network configuration](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_ncm#network_configuration)
 sections, where you have to depend entirely on kernel and system logs to know 
-whether your device is connected properly.
+whether your device is connected properly.*
+*Also, if you mess up during the driver installation while following the tutorial, feel free to start fresh
+and reflash the firmware onto the router. It's better to not mix up the drivers by trying
+to install everything in one go.
 
 ### Creating WireGuard VPN Server through on Digital Ocean
 Sign up / Log in to Digital ocean and create a droplet. You can use the basic ubuntu droplet 
