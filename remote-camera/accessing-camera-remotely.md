@@ -45,3 +45,6 @@ the camera feed by using the IP address of the hosted server and the `External P
 in the port forwarding rule set above.
 
 Enjoy!
+
+*To know more about setting up IP cameras and routers to be accessible remotely,
+visit the [Introduction](https://pulakk.github.io/blog/remote-camera/) page.*
