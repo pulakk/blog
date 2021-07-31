@@ -6,6 +6,16 @@ to know if you actually need these steps and if so, to understand why the setup 
 My router was connected to the internet behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). This meant that
 I would require VPN client support on my router to access it through a hoster server with a Public IP Address.
 
+```
+Your home laptop or phone
+           |
+           |
+Hosted Server with public IP Adress --- [ISP CGNAT] --- [Router] ---- Camera
+            ||                                             ||
+            + ============================================= +
+                            VPN Tunnel
+```
+
 [TP-Link routers do not support VPN Clients](https://community.tp-link.com/en/home/forum/topic/168500) at the time of writing this tutorial. Hence, I started by flashing my TP-Link router with the [OpenWRT](https://openwrt.org/)
 firmware so that I could manually install a VPN client on the router.
 After flashing the router, the USB Modem needed some drivers to be installed prior to configuration. Once the router was connected to the internet, I had to choose a VPN software and I picked
