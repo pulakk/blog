@@ -59,8 +59,7 @@ You may try using the one of the following tutorials present there:
 * [RNDIS](https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_rndis)
 
 Which tutorial will work for you depends on what protocol your 
-Modem supports (UMTS, NCM, RNDIS, CDC Ethernet) for connecting to your 
-router and whether it provides the internet service through 3G or 4G/LTE. 
+Modem supports (UMTS, NCM, RNDIS, CDC Ethernet) and whether it provides the internet service through 3G/4G/LTE. 
 
 If you want to manually check the supported protocol in your modem, you can send AT commands to communicate
 with the Dongle. This is not a mandatory step as you can simply try the tutorials mentioned
