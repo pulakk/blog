@@ -40,7 +40,7 @@ most likely be `554`. Set the `Internal IP Adress` to the IP address of the came
 Click `save` and then `save and apply`.
 
 ### Wrapping up
-You should be able to access your camera feed now by using a network video player for e.g. 
+You should be able to access your camera feed now by using a network video player like 
 [VLC](https://www.videolan.org/vlc/).
 
 If you have connected your router to a hosted server using a tunnel, you can access
