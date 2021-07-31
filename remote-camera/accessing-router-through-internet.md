@@ -1,8 +1,8 @@
 # Accessing TP-Link MR3020 router Remotely
 
-Links
-* [Introduction](https://pulakk.github.io/blog/remote-camera/)
-* [Custom setup](https://pulakk.github.io/blog/remote-camera/custom-setup)
+* [Previous Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
+* [Home](https://pulakk.github.io/blog/remote-camera/)
+* [Configure OpenWRT Router to access IP Camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
 
 ----
 My TP-Link MR3020 v3 router was connected to the internet through a Huawei E3372h-607 USB Dongle Modem, 
@@ -275,5 +275,6 @@ Next we will configure the router's firewall rules to access the camera.
 
 ------
 
-[Introduction](https://pulakk.github.io/blog/remote-camera/)
-[Custom setup](https://pulakk.github.io/blog/remote-camera/custom-setup)
+* [Previous Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
+* [Home](https://pulakk.github.io/blog/remote-camera/)
+* [Configure OpenWRT Router to access IP Camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
