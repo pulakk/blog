@@ -3,6 +3,7 @@
 *If you're new to this tutorial, you may like to go through the [Introduction](https://pulakk.github.io/blog/remote-camera/)
 to know if you actually need these steps and if so, to understand why the setup is tedious and time consuming.*
 
+----
 My TP-Link MR3020 v3 router was connected to the internet through a Huawei E3372h-607 USB Dongle Modem, 
 which meant that the internet access was behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). 
 Hence, to access the router remotely, a VPN Client needs to be configured on the router which would connect to 
@@ -270,5 +271,7 @@ to a hosted server. We can now access the router remotely.
 Next we will configure the router's firewall rules to access the camera.
 
 * [Configure OpenWRT Router to access IP Camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
+
+------
 * [Back to custom setup](https://pulakk.github.io/blog/remote-camera/custom-setup)
 * [Back to Introduction](https://pulakk.github.io/blog/remote-camera/)
