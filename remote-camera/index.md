@@ -61,7 +61,10 @@ IP Address assigned to you by ISP
 #### (a) Static public IP Addresses
 If the ISP
 you're getting the internet access from, provides you with a static
-public IP address, then most of your problems are solved. 
+public IP address, then most of your problems are solved herein. Any
+choice of router and camera should work for you, because you can access your
+router, and in effect, your camera, by making requests to that static
+public IP address.
 
 #### (b) Dynamic public IP Addresses
 Your ISP is most probably
