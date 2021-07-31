@@ -5,7 +5,7 @@ Accessing your camera or any other device through the internet is a use case man
 ocassionally come across. But there are some challenges as well as pitfalls when it comes to
 the choice of routers and the setup. In the next section I'll talk about what problems you 
 might face, especially depending on your choice of router and ISP. Then, I am going to 
-introduce my custom inventory and explain how I set up the camera and the router to be accessible
+introduce the inventory and explain how I set up the camera and the router to be accessible
 remotely. 
 
 Do keep in mind that the tutorial will not be straightforward for someone who is 
