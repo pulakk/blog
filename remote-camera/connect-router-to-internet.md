@@ -3,8 +3,8 @@
 Given that my router was behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), I had to flash my TP-Link router
 with the [OpenWRT](https://openwrt.org/)
 firmware because the [router did not support VPN Clients](https://community.tp-link.com/en/home/forum/topic/168500).
-After flashing the router, I had to install drivers and configure the modem
-for connecting to the internet. After the internet connectivity was setup, I had to choose a VPN client and I picked
+After flashing the router, I had to install drivers and configure the modem. Once the router was connected to 
+the internet, I had to choose a VPN client and I picked
 [Wireguard](https://www.wireguard.com/).
 
 ### Flashing router with OpenWRT firmware
