@@ -131,7 +131,7 @@ up and accessing a single camera through the internet or both. Either way my pur
 
 This tutorial will guide you through the setup of a specific camera, and router model, so if you want to follow 
 along, my recommendation would be to replicate the same setup. There is some leeway in the choice
-of the camera but setting up the router to be accessible to the internet migh be different for
+of the camera but the process of setting up the router to be accessible through the internet might be different for
 different routers.
 
 * [My custom setup for accessing camera remotely](https://pulakk.github.io/blog/remote-camera/custom-setup)
