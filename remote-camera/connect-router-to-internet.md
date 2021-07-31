@@ -4,8 +4,9 @@ Given that my router was behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-
 with the [OpenWRT](https://openwrt.org/)
 firmware because the [router did not support VPN Clients](https://community.tp-link.com/en/home/forum/topic/168500).
 After flashing the router, I had to install drivers and configure the modem. Once the router was connected to 
-the internet, I had to choose a VPN client and I picked
-[Wireguard](https://www.wireguard.com/).
+the internet, I had to choose a VPN software and I picked
+[Wireguard](https://www.wireguard.com/). This is a two step process, setting up Wireguard server on a hosted server (e.g. [Digital Ocean](https://www.digitalocean.com/)) and installing a Wireguard client on the router. Each of these steps are described 
+below in great detail.
 
 ### Flashing router with OpenWRT firmware
 Read through the official [tutorial for flashing OpenWRT firmware to an MR3020 V3 router](https://openwrt.org/toh/tp-link/tl-mr3020_v3). Skip the `Install OpenWRT (Generic Explanation)` link (trying to install the firmware from your MR3020 v3 router's web interface won't work as it does not accept flash firmware from external sources) and go straight to the `Configure a TFTP server as follows:` portion. There are numerous tutorials on youtube as well which show you how to install OpenWRT firmware on an MR3020 router via TFTP. The process is described briefly below -
