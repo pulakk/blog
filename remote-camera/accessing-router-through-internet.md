@@ -9,9 +9,8 @@ Hence, to access the router remotely, a VPN Client needs to be configured on the
 a hosted VPN server with a public IP Address.
 
 ```
-             Hosted server
-            forwards requests
-             to router via
+         Hosted server forwards requests
+         from home laptop to router via
              the VPN Tunnel
              
 [Home Laptop] ----> Hosted Server <==== +
