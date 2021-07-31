@@ -263,6 +263,12 @@ Now you should be able to connect to your router directly via the hosted server'
 For e.g. if your digital ocean droplet's public IP address is 1.2.3.4, `http://1.2.3.4/` should bring you to
 the router's web UI, i.e. the LuCI Web interface since we're using OpenWRT.
 
-Now that the we can access the router remotely, we will configure the router's firewall rules to access the camera.
+To recap, we flashed our TP-Link MR3020 v3 router with the OpenWRT Firmware, configured the Huawei
+E3372h-607 USB Dongle for internet access and setup VPN for connecting the router
+to a hosted server. We can now access the router remotely.
 
-* [Accessing the camera feed remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
+Next we will configure the router's firewall rules to access the camera.
+
+* [Configure OpenWRT Router to access IP Camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
+* [Back to custom setup](https://pulakk.github.io/blog/remote-camera/custom-setup)
+* [Back to Introduction](https://pulakk.github.io/blog/remote-camera/)
