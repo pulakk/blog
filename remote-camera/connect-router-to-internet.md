@@ -1,7 +1,7 @@
 # Connecting TP-Link MR3020 router to the internet
 
 *If you're new to this tutorial, you may like to go through the [Introduction](https://pulakk.github.io/blog/remote-camera/)
-to understand why the tutorial needs to be so tedious and complicated.*
+to know if you actually need these steps and if so, to understand why the setup is tedious and time consuming.*
 
 Given that my router was behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), I had to flash my TP-Link router
 with the [OpenWRT](https://openwrt.org/)
