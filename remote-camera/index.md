@@ -1,6 +1,7 @@
 # Accessing IP Cameras remotely
 
 * [Next Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
+
 ---
 ## Introduction
 Accessing your camera or any other device through the internet is a use case many people
