@@ -35,9 +35,10 @@ providing USB support for LTE Dongles or an in-built modem.
 
 ### ISP
 The IP address assigned to you by your ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) , i.e. the [WAN](https://en.wikipedia.org/wiki/Wide_area_network) IP, is not always a public IP Address. 
-Usually in the modern world, where IPv4 addresses running out, your ISP will put you behind a 
-[Carrier grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). Your setup will vary according
-to what kind of IP Address is assigned to you.
+In the modern world, where IPv4 addresses are running out, your ISP will usually put you behind a 
+[Carrier grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT).
+
+Your setup will vary according to what kind of IP Address is assigned to you.
 
 ```
 IP Address assigned to you by ISP
