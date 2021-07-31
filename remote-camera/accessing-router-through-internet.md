@@ -124,7 +124,7 @@ sections, where you have to depend entirely on kernel and system logs to know
 whether your device is connected properly.*
 
 *Also, if you mess up during the driver installation while following various tutorials, feel free to start fresh
-and reflash the firmware onto the router as many times as you need. It's better to not mix up the drivers by trying
+and reflash the firmware onto the router as many times as you need. It's better not to mix up the drivers by trying
 to install everything in one go.*
 
 ### Creating WireGuard VPN Server through on Digital Ocean
