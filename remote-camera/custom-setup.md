@@ -11,14 +11,13 @@
 Choosing this setup meant that the internet access from my router would be behind a CGNAT. So, DDNS did not work for me
 and I had to create a wireguard VPN tunnel from my router to a hosted server to access my router
 through that server instead. I
-picked Digital ocean but any other cloud provider should do. So here's what I did for 
-accessing the camera behind the router remotely.
+picked Digital ocean but any other cloud provider should do.
 
 ## Overview
-* OpenWRT firmware on the router
+* Flashing OpenWRT firmware on the router
 * USB Dongle Protocol: NCM; Service: LTE
-* Wireguard Client: OpenWRT opkg installation; configured through LuCI
-* Wireguard VPN Server on Digital Ocean droplet
+* Wireguard Client: opkg installation; configured through LuCI
+* Wireguard VPN Server on a Digital Ocean droplet
 * Custom domain name pointing to Digital Ocean droplet (Optional)
 
 
