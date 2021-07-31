@@ -108,7 +108,8 @@ daemon.notice netifd: E3372_Dongle_4 (2114): udhcpc: lease of <some-shared-space
 daemon.notice netifd: Interface 'E3372_Dongle_4' is now up
 ```
 
-You'll see similar kernel and system logs for other protocols as well.
+You'll see similar kernel and system logs for other protocols as well, both of which should be visible on your
+router's web UI.
 
 Note: Try to use the Router's web UI to
 create the Interface for your USB Modem. Fields like the `Protocol`, `Modem Device`, and `Service Type`
