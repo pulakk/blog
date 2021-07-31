@@ -67,11 +67,15 @@ router, and in effect, your camera, by making requests to that static
 public IP address.
 
 #### (b) Dynamic public IP Addresses
-Your ISP is most probably
-going to provide you with [dynamic IP addresses](https://www.techopedia.com/definition/28504/dynamic-internet-protocol-address-dynamic-ip-address),
+Your ISP is may provide you with 
+[dynamic public IP addresses](https://www.techopedia.com/definition/28504/dynamic-internet-protocol-address-dynamic-ip-address),
 in which case you might need to resort to a Dynamic DNS 
 ([DDNS](https://en.wikipedia.org/wiki/Dynamic_DNS)) service like [No-IP](https://www.noip.com/). 
 Note: This also means that you will need to get a router with DDNS support.
+
+Dynamic IP addresses simply mean that your IP Address may change over time. You will need be able to 
+connect to your router if you can't keep track of the latest IP Address just from your home. Hence, DDNS
+support is needed.
 
 #### (c) Private IP Addresses
 This is the most common scenario.
