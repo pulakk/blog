@@ -12,6 +12,8 @@ Do keep in mind that the tutorial will not be straightforward for someone who is
 new to the world of computers and networking. 
 
 ## Challenges
+
+### Camera
 Picking the right camera is the first step. You might need features like
 nightvision, communication through internet protocol ([IP](https://en.wikipedia.org/wiki/IP_address)), 
 outdoor/indoor depending on your use case, microphone support, 
@@ -21,6 +23,7 @@ etc. If you're going for an ethernet connected camera, you might need a
 [PoE](https://en.wikipedia.org/wiki/Power_over_Ethernet) device, to keep the camera
 placement flexible. Try to pick a 802.3af compliant PoE if you're going for it.
 
+### Router and Modem
 You will need a [router](https://en.wikipedia.org/wiki/Router_(computing)) too. It will connect to the internet and 
 receive traffic to and from your camera and the outside world, preferrably your home. 
 Routers too come in a variety of options and your choice of router will narrow down depending on whether your camera
@@ -30,6 +33,7 @@ For connecting your router to the internet, you might choose to buy a separate [
 and connect it to the router through ethernet or wirelessly, or simply go with a Router
 providing USB support for LTE Dongles or an in-built modem.
 
+### ISP
 ```
 IP Address assigned to you by ISP
  |
@@ -38,7 +42,7 @@ IP Address assigned to you by ISP
  |   Access router directly 
  |     through public IP
  |
- + ---- [dynamic + public IP] 
+ + ---- [dynamic public IP] 
  |          |
  |     Setup Dynamic DNS on router
  |  (Pick Dynamic DNS supported router)
@@ -49,15 +53,22 @@ IP Address assigned to you by ISP
     Access router through hosted VPN server
 ```
 
+#### (a) static public IP
 If the ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) 
 you're getting the internet access from, provides you with a static
-public IP address, then most of your problems are solved. But your ISP is most probably
+public IP address, then most of your problems are solved. 
+
+#### (b) dynamic public IP
+Your ISP is most probably
 going to provide you with [dynamic IP addresses](https://www.techopedia.com/definition/28504/dynamic-internet-protocol-address-dynamic-ip-address),
 in which case you might need to resort to a Dynamic DNS 
 ([DDNS](https://en.wikipedia.org/wiki/Dynamic_DNS)) service like [No-IP](https://www.noip.com/). 
 Note: This also means that you will need to get a router with DDNS support.
 
-But with ISPs moving towards [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), 
+#### (c) private IP
+This is the most common scenario.
+
+With ISPs moving towards [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), 
 it is highly unlikely you will get a public IP address, 
 let alone a static one. That is especially the case
 in LTE USB Dongle Modems. You'll be assigned a
@@ -90,6 +101,7 @@ PPP/UMTS, QMI, NCM, RDNIS, CDC over ethernet and might provide the service throu
 This gives rise to a multitude of possibilies and you might end up in a sea of trial
 and error for hours before figuring out the right configuration for your modem.
 
+### Accessing camera from router
 Accessing the camera remotely this point on, is just a matter of forwarding ports and
 changing firewall rules.
 
