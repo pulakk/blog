@@ -1,6 +1,6 @@
 # Configuring router to enable access to camera feed
 *Please go through the [Introduction](https://pulakk.github.io/blog/remote-camera/) 
-first, before proceeding with this tutorial.*
+first, before proceeding with this tutorial to gain context on the router model and the OpenWRT firmware.*
 
 This tutorial describes how to configure your router to make an IP camera accessible externally
 from WAN. The camera used is a 
