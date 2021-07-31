@@ -135,3 +135,7 @@ of the camera but the process of setting up the router to be accessible through 
 different routers.
 
 * [My custom setup for accessing camera remotely](https://pulakk.github.io/blog/remote-camera/custom-setup)
+
+It is followed by tutorials on 
+* [How to access router remotely](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
+* [How to access the camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
