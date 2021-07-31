@@ -3,7 +3,8 @@
 *If you're new to this tutorial, you may like to go through the [Introduction](https://pulakk.github.io/blog/remote-camera/)
 to know if you actually need these steps and if so, to understand why the setup is tedious and time consuming.*
 
-My router was connected to the internet behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). This meant that
+My TP-Link MR3020 v3 router was connected to the internet through a Huawei E3372h-607 USB Dongle Modem, 
+which meant the internet access was behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). This meant that
 I would require VPN client support on my router to access it through a hosted server.
 
 ```
