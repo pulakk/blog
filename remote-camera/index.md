@@ -31,7 +31,7 @@ and connect it to the router through ethernet or wirelessly, or simply go with a
 providing USB support for LTE Dongles or an in-built modem.
 
 ```
-ISP
+IP Address assigned to you by ISP
  |
  |---- [static + public IP Address] --- > Access router directly through public IP
  |
