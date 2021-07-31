@@ -9,7 +9,7 @@ I would require VPN client support on my router to access it through a hoster se
 [TP-Link routers do not support VPN Clients](https://community.tp-link.com/en/home/forum/topic/168500) at the time of writing this tutorial. Hence, I started by flashing my TP-Link router with the [OpenWRT](https://openwrt.org/)
 firmware so that I could manually install a VPN client on the router.
 After flashing the router, the USB Modem needed some drivers to be installed prior to configuration. Once the router was connected to the internet, I had to choose a VPN software and I picked
-[Wireguard](https://www.wireguard.com/). This is a two step process, (i) setting up Wireguard server on a hosted server (e.g. [Digital Ocean](https://www.digitalocean.com/)) and (ii) installing a Wireguard client on the router. Each of these steps are described 
+[Wireguard](https://www.wireguard.com/). This is a two step process, (i) setting up Wireguard server on a hosted server (e.g. [Digital Ocean](https://www.digitalocean.com/)) and (ii) installing and configuring Wireguard client on the router. Each of these steps are described 
 below in great detail.
 
 ### Flashing router with OpenWRT firmware
