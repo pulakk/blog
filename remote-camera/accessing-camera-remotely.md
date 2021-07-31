@@ -28,6 +28,7 @@ Set the *Allow forward to destination zones* to `lan`.
 ### Add port forwarding rules
 
 ![Firewall settings for Port forward in OpenWRT Router](https://raw.githubusercontent.com/pulakk/blog/main/remote-camera/images/openwrt-firewall-port-forward.png)
+
 On the LuCI web Interface of your OpenWRT router, navigate to `Network > Firewall > Port forwards` 
 and click the `add` button.
 
