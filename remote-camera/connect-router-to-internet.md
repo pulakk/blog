@@ -7,7 +7,7 @@ My router was connected to the internet behind a [CGNAT](https://en.wikipedia.or
 I would require VPN client support on my router to access it through a hoster server with a Public IP Address.
 
 ```
-[Home Laptop] ----> Hosted Server <=====+
+[Home Laptop] ----> Hosted Server <==== +
   |                 <public ip>        ||
   |                     |              ||
   |                     |              ||
@@ -15,7 +15,7 @@ I would require VPN client support on my router to access it through a hoster se
   |  private        <public ip>        || Tunnel
   |   IP                |              ||
   |                     |              ||
-  + - - - - - - - -  Router       <=====+
+  + - - - - - - - -  Router       <==== +
                <shared space private ip>
                         |
                      Camera
