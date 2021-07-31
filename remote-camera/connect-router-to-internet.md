@@ -3,8 +3,10 @@
 *If you're new to this tutorial, you may like to go through the [Introduction](https://pulakk.github.io/blog/remote-camera/)
 to know if you actually need these steps and if so, to understand why the setup is tedious and time consuming.*
 
-My router was connected to the internet behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). 
-So, I had to start by flashing my TP-Link router with the [OpenWRT](https://openwrt.org/)
+My router was connected to the internet behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). This meant that
+I would require VPN client support on my router to access it through a hoster server with a Public IP Address.
+
+I started by flashing my TP-Link router with the [OpenWRT](https://openwrt.org/)
 firmware because the [router did not support VPN Clients](https://community.tp-link.com/en/home/forum/topic/168500).
 After flashing the router, the USB Modem needed some drivers to be installed prior to configuration. Once the router was connected to the internet, I had to choose a VPN software and I picked
 [Wireguard](https://www.wireguard.com/). This is a two step process, setting up Wireguard server on a hosted server (e.g. [Digital Ocean](https://www.digitalocean.com/)) and installing a Wireguard client on the router. Each of these steps are described 
