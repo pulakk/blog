@@ -247,3 +247,12 @@ wg show
 ```
 You can test the wireguard client on the router by going to `Status > Wireguard Status` on the
 router's UI.
+
+## Conclusion
+Now you should be able to connect to your router directly via the hosted server's public IP Address. 
+For e.g. if your digital ocean droplet's public IP address is 1.2.3.4, `http://1.2.3.4/` should bring you to
+the router's web UI, i.e. the LuCI Web interface since we're using OpenWRT.
+
+Now that the we can access the router remotely, we will configure the router's firewall rules to access the camera.
+
+* [Accessing the camera feed remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
