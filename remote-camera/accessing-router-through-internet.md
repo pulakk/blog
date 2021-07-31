@@ -4,8 +4,9 @@
 to know if you actually need these steps and if so, to understand why the setup is tedious and time consuming.*
 
 My TP-Link MR3020 v3 router was connected to the internet through a Huawei E3372h-607 USB Dongle Modem, 
-which meant the internet access was behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). This meant that
-I would require VPN client support on my router to access it through a hosted server.
+which meant that the internet access was behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). 
+Hence, to access the router remotely, a VPN Client needs to be configured on the router which would connect to 
+a hosted VPN server with a public IP Address.
 
 ```
 [Home Laptop] ----> Hosted Server <==== +
