@@ -15,9 +15,16 @@ Once they are connected, you should be able to access the camera using it's
 local IP address, for e.g. `192.168.1.64`, through the browser.
 
 ### Modify firewall policy in the OpenWRT Router
-![Firewall Settings for OpenWRT Router](https://raw.githubusercontent.com/pulakk/blog/main/remote-camera/images/open-firewall-zone-config.png)
+
+![Firewall Settings for zones in OpenWRT Router](https://raw.githubusercontent.com/pulakk/blog/main/remote-camera/images/open-firewall-zone-config.png)
+
 Open the LuCI web interface of your OpenWRT router and go to `Network > Firewall > Zones`.
+
 Add all the required interfaces like  to the WAN zone by going to `wan > Edit > Covered Networks`.
 Set the *Allow forward to destination zones* to `lan`.
 
 ### Add port forwarding rules
+
+![Firewall settings for Port forward in OpenWRT Router](https://raw.githubusercontent.com/pulakk/blog/main/remote-camera/images/openwrt-firewall-port-forward.png)
+On the LuCI web Interface of your OpenWRT router, navigate to `Network > Firewall > Port forwards` 
+and click the `add` button.
