@@ -1,10 +1,11 @@
 # Configuring router to enable access to camera feed
-*Go through the [Introduction](https://pulakk.github.io/blog/remote-camera/) page if you want to
-access an IP Camera's feed remotely.*
+*Please go through the [Introduction](https://pulakk.github.io/blog/remote-camera/) 
+first, before proceeding with this tutorial.*
 
 This tutorial describes how to configure your router to make an IP camera accessible externally
-from WAN. The camera used is a HIKVision DS-2CD1321-I Dome camera connected to the router
-through a PoE adapter. 
+from WAN. The camera used is a 
+[HIKVision DS-2CD1321-I Dome camera](https://www.hikvision.com/ph/products/IP-Products/Network-Cameras/Value-Series/DS-2CD1321-I/)
+connected to the router through a PoE adapter. 
 
 ### Connect the camera to the router
 Use your camera's manual to setup the connection from the router to the camera. 
