@@ -1,10 +1,10 @@
-# Accessing TP-Link MR3020 router through the internet
+# Accessing TP-Link MR3020 router Remotely
 
 *If you're new to this tutorial, you may like to go through the [Introduction](https://pulakk.github.io/blog/remote-camera/)
 to know if you actually need these steps and if so, to understand why the setup is tedious and time consuming.*
 
 My router was connected to the internet behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). This meant that
-I would require VPN client support on my router to access it through a hoster server.
+I would require VPN client support on my router to access it through a hosted server.
 
 ```
 [Home Laptop] ----> Hosted Server <==== +
