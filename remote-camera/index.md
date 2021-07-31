@@ -137,5 +137,5 @@ different routers.
 * [My custom setup for accessing camera remotely](https://pulakk.github.io/blog/remote-camera/custom-setup)
 
 It is followed by tutorials on 
-* [How to access router remotely](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
-* [How to access the camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
+* [How to access TP-Link MR3020 OpenWRT router remotely](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
+* [How to configure the OpenWRT router to access IP camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
