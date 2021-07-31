@@ -1,7 +1,10 @@
 # Accessing IP Cameras remotely
 
 ## Intro
-Setting up a camera, to be viewable remotely is a very challening task.
+Accessing your camera or any other device through the internet is a common use case many people
+need from time to time. But there are some challenges as well as pitfalls when it comes to
+the choice of routers and the setup. In the next section I'll talk about what problems you 
+might face, especially depending on your choice of router and ISP.
 
 ## Challenges
 Picking the right camera is the first step. You might need features like
