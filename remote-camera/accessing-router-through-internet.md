@@ -9,11 +9,16 @@ Hence, to access the router remotely, a VPN Client needs to be configured on the
 a hosted VPN server with a public IP Address.
 
 ```
+             Hosted server
+            forwards requests
+             to router via
+             the VPN Tunnel
+             
 [Home Laptop] ----> Hosted Server <==== +
   |                 <public ip>        ||
   |                     |              ||
-  |  cannot access      |              ||
- [x] router through     |              ||
+  |  cannot access      |              || 
+ [x] router through     |              || 
   |  CGN Gateway        |              || VPN
   |                     |              || Tunnel
   + - - - - - - -    CGN gateway       ||
