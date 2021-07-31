@@ -92,14 +92,13 @@ their network and so other servers on the internet can only talk to your ISP,
 but not directly to you.
 DDNS will be of no help in this scenario. 
 
-To solve this, you can setup a VPS server on a hosted service
+To solve this, you can setup a VPN server on a hosted service
 and a VPN client on the router, in which case a VPN software
 like [Wireguard](https://www.wireguard.com/) will come in handy. This is
 because, although you might not have a public IP address, a hosted server
-for e.g. in [Digital Ocean](https://www.digitalocean.com/), will. So your 
-wireguard app can act as the client to connect to the server's public IP address
-and create a tunnel. You would then be able to connect to the router
-remotely as long as you can access the hosted server.
+for e.g. in [Digital Ocean](https://www.digitalocean.com/), will. 
+You would then be able to connect to the router
+remotely as long as you can access the hosted server, through its public IP address.
 
 This brings us to another problem. Not all routers have VPN client support. Many routers, 
 like [ones from TP-Link](https://community.tp-link.com/en/home/forum/topic/168500)
