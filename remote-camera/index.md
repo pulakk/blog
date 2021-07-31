@@ -34,8 +34,7 @@ and connect it to the router through ethernet or wirelessly, or simply go with a
 providing USB support for LTE Dongles or an in-built modem.
 
 ### ISP
-The IP address assigned to you by your ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) is not always a public IP Address. The IP Address that you see when search for
-`what is my ip` on `google` for example, may not be your [WAN](https://en.wikipedia.org/wiki/Wide_area_network) IP.
+The IP address assigned to you by your ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) is not always a public IP Address. Your public IP Address may not be the same as your [WAN](https://en.wikipedia.org/wiki/Wide_area_network) IP.
 Usually in the modern world, where IPv4 addresses running out, your ISP will put you behind a 
 [Carrier grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). Your setup will vary according
 to what kind of IP Address is assigned to you.
