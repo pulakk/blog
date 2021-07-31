@@ -112,7 +112,7 @@ Flashing your router with a custom firmware means you might
 have to install drivers and configure the modem yourself.
 This is clearly a hassle, given that the modem might be a USB dongle or an In-built
 one. Dongles too might support multiple protocols ranging from 3G over
-PPP/UMTS, QMI, NCM, RDNIS, CDC over ethernet and might provide the service through 3G or LTE.
+PPP/UMTS, QMI, NCM, RDNIS, CDC over ethernet and might provide the service through 3G/4G/LTE.
 This gives rise to a multitude of possibilies and you might end up in a sea of trial
 and error for hours before figuring out the right configuration for your modem.
 
