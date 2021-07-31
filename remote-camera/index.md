@@ -34,6 +34,12 @@ and connect it to the router through ethernet or wirelessly, or simply go with a
 providing USB support for LTE Dongles or an in-built modem.
 
 ### ISP
+The IP address assigned to you by your ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) is not always a public IP Address. The IP Address that you see when search for
+`what is my ip` on `google` for example, may not be the exact IP Address you are assigned to in your
+immediate network. Usually in the modern world of IPv4 addresses, your ISP will put you behind a 
+[Carrier grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). Your setup will vary according
+to what kind of IP Address is assigned to you.
+
 ```
 IP Address assigned to you by ISP
  |
@@ -53,19 +59,19 @@ IP Address assigned to you by ISP
     Access router through hosted VPN server
 ```
 
-#### (a) static public IP
-If the ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) 
+#### (a) Static public IP Addresses
+If the ISP
 you're getting the internet access from, provides you with a static
 public IP address, then most of your problems are solved. 
 
-#### (b) dynamic public IP
+#### (b) Dynamic public IP Addresses
 Your ISP is most probably
 going to provide you with [dynamic IP addresses](https://www.techopedia.com/definition/28504/dynamic-internet-protocol-address-dynamic-ip-address),
 in which case you might need to resort to a Dynamic DNS 
 ([DDNS](https://en.wikipedia.org/wiki/Dynamic_DNS)) service like [No-IP](https://www.noip.com/). 
 Note: This also means that you will need to get a router with DDNS support.
 
-#### (c) private IP
+#### (c) Private IP Addresses
 This is the most common scenario.
 
 With ISPs moving towards [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), 
