@@ -1,8 +1,9 @@
-# Configuring router to enable access to camera feed
-*Please go through the [Introduction](https://pulakk.github.io/blog/remote-camera/) 
-first, before proceeding with this tutorial to gain context on the router model and the OpenWRT firmware.*
+# Configuring OpenWRT router to enable access to camera feed
+*You may want to go through the [Introduction](https://pulakk.github.io/blog/remote-camera/) 
+page first, before proceeding with this tutorial.*
 
-This tutorial describes how to configure your router to make an IP camera accessible externally
+This tutorial describes how to configure your [OpenWRT](https://openwrt.org/)
+router to make an IP camera accessible externally
 from WAN. The camera used is a 
 [HIKVision DS-2CD1321-I Dome camera](https://www.hikvision.com/ph/products/IP-Products/Network-Cameras/Value-Series/DS-2CD1321-I/)
 connected to the router through a PoE adapter. 
