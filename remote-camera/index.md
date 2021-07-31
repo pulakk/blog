@@ -23,12 +23,22 @@ placement flexible. Try to pick a 802.3af compliant PoE if you're going for it.
 
 You will need a [router](https://en.wikipedia.org/wiki/Router_(computing)) too. It will connect to the internet and 
 receive traffic to and from your camera and the outside world, preferrably your home. 
-Routers too come in variety of options and your choice of router will narrow down depending on whether your camera
+Routers too come in a variety of options and your choice of router will narrow down depending on whether your camera
 is wired or wireless. 
 
 For connecting your router to the internet, you might choose to buy a separate [modem](https://en.wikipedia.org/wiki/Modem)
 and connect it to the router through ethernet or wirelessly, or simply go with a Router
 providing USB support for LTE Dongles or an in-built modem.
+
+```
+ISP
+ |
+ |---- [static + public IP Address] --- > Access router directly through public IP
+ |
+ |---- [dynamic + public IP Address] --- > Setup Dynamic DNS on router (Pick Dynamic DNS supported router)
+ |
+ |---- [(shared space) private IP address (behind CGNAT)] ---> VPN Client on router + Access router through hosted VPN server
+```
 
 If the ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) 
 you're getting the internet access from, provides you with a static
