@@ -23,5 +23,5 @@ picked Digital ocean but any other cloud provider should do.
 
 ## Steps
 
-* [Connect your router to the internet](https://pulakk.github.io/blog/remote-camera/connect-router-to-internet)
+* [Connect your router to the internet](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
 * [Accessing your camera](https://pulakk.github.io/blog/remote-camera/accessing-camera)
