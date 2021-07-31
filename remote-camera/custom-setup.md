@@ -23,5 +23,5 @@ picked Digital ocean but any other cloud provider should do.
 
 ## Steps
 
-* [Accessing your router remotely](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
-* [Accessing your camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera)
+* [Accessing TP-Link MR3020 OpenWRT router remotely](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
+* [Configuring OpenWRT router to access IP camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera)
