@@ -244,7 +244,7 @@ and click the `+` button
 * Go to `firewall` settings tab and set `Create / Assign Firewall zone` to `wan`
 * Go to `peer` tab, and paste the pulic key of the Digital Ocean server.
 `Preshared key` will remain empty. Set the allowed IPs to `0.0.0.0/0` and the `Endpoint host` to the Public IP Address
-of the Digital Ocean droplet. Check the box on `Router allowed IPS`. You may set the persistent keep alive to `25`.
+of the Digital Ocean droplet. Check the box on `Route allowed IPs`. You may set the persistent keep alive to `25`.
 * Click `save`
 
 The wireguard client and server are setup and you should be able to test the connection on the server using
