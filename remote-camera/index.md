@@ -73,8 +73,8 @@ in which case you might need to resort to a Dynamic DNS
 ([DDNS](https://en.wikipedia.org/wiki/Dynamic_DNS)) service like [No-IP](https://www.noip.com/). 
 Note: This also means that you will need to get a router with DDNS support.
 
-Dynamic IP addresses simply mean that your IP Address may change over time. You will need be able to 
-connect to your router if you can't keep track of the latest IP Address just from your home. Hence, DDNS
+Dynamic IP addresses simply mean that your IP Address may change over time. Without keeping track of the
+router's latest IP Address, you can not connect to it. Hence, DDNS
 support is needed.
 
 #### (c) Private IP Addresses
