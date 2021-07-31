@@ -8,8 +8,8 @@ I would require VPN client support on my router to access it through a hoster se
 
 ```
      Your home laptop or phone
-     |                       \   [x]
-     |                         ________ 
+     |                       \   
+     |                         -- [x] -- 
      |                                   \
 Hosted Server <---> [CGNAT gateway] <--- [Router] ---- Camera
  <public ip>          <public ip>      <private ip>  <private ip>
