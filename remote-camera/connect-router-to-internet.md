@@ -4,7 +4,7 @@
 to know if you actually need these steps and if so, to understand why the setup is tedious and time consuming.*
 
 My router was connected to the internet behind a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). 
-So, I had to by flashing my TP-Link router with the [OpenWRT](https://openwrt.org/)
+So, I had to start by flashing my TP-Link router with the [OpenWRT](https://openwrt.org/)
 firmware because the [router did not support VPN Clients](https://community.tp-link.com/en/home/forum/topic/168500).
 After flashing the router, I had to install drivers and configure the modem. Once the router was connected to 
 the internet, I had to choose a VPN software and I picked
