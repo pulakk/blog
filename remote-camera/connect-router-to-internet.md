@@ -20,19 +20,19 @@ Hosted Server <---> [CGNAT gateway] <--- [Router] ---- Camera
 
 
 ```
-VPN
-Tunnel
-+------ Hosted Server --------- Home Laptop
-|       <public ip>             /
-|          |                   
-|       CGNAT gateway         /
-|       <public ip>          
-|          |                /
-+------- Router - - [x] - -
-     <shared space private ip>
-           |
-        Camera
-     <private ip>
+Home Laptop -----→ Hosted Server ←------+
+  |                 <public ip>         |
+                        ↑               |
+  |                     ↓               |
+ [x] access        CGNAT gateway        | VPN
+  |  private        <public ip>         |Tunnel
+      IP                ↑               |
+  |                     |               |
+  +   - - - - - - -   Router   ←--------+
+               <shared space private ip>
+                        |
+                     Camera
+                   <private ip>
 ```
 
 [TP-Link routers do not support VPN Clients](https://community.tp-link.com/en/home/forum/topic/168500) at the time of writing this tutorial. Hence, I started by flashing my TP-Link router with the [OpenWRT](https://openwrt.org/)
