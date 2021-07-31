@@ -34,7 +34,7 @@ and connect it to the router through ethernet or wirelessly, or simply go with a
 providing USB support for LTE Dongles or an in-built modem.
 
 ### ISP
-The IP address assigned to you by your ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) is not always a public IP Address. Your public IP Address may not be the same as your [WAN](https://en.wikipedia.org/wiki/Wide_area_network) IP.
+The IP address assigned to you by your ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) , i.e. the [WAN](https://en.wikipedia.org/wiki/Wide_area_network) IP, is not always a public IP Address. 
 Usually in the modern world, where IPv4 addresses running out, your ISP will put you behind a 
 [Carrier grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT). Your setup will vary according
 to what kind of IP Address is assigned to you.
@@ -78,7 +78,10 @@ it is highly unlikely you will get a public IP address,
 let alone a static one. That is especially the case
 in LTE USB Dongle Modems. You'll be assigned a
 [shared space private IP](https://en.wikipedia.org/wiki/IPv4_shared_address_space)
-in the range `100.*.*.*` instead of a public IP Address.
+in the range `100.*.*.*` instead of a public IP Address. In simple words, the ISP will
+make requests to the internet on behalf of you, essentially hiding you behind
+their network and so other servers on the internet can only talk to your ISP,
+but not directly to you.
 DDNS will be of no help in this scenario. 
 
 To solve this, you can setup a VPS server on a hosted service
