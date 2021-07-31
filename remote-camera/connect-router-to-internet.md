@@ -28,7 +28,7 @@ Home Laptop -----→ Hosted Server ←------+
   |  private        <public ip>         |Tunnel
       IP                ↑               |
   |                     |               |
-  +   - - - - - - -   Router   ←--------+
+  +   -   -   -   -   Router   ←--------+
                <shared space private ip>
                         |
                      Camera
