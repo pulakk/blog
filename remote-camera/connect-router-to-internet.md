@@ -22,11 +22,11 @@ Hosted Server <---> [CGNAT gateway] <--- [Router] ---- Camera
 ```
 Home Laptop -----> Hosted Server <------+
   |                 <public ip>         |
-                        |               |
+  |                     |               |
   |                     |               |
  [x] access        CGNAT gateway        | VPN
   |  private        <public ip>         |Tunnel
-      IP                ^               |
+  |   IP                ^               |
   |                     |               |
   + - - - - - - - -  Router      <------+
                <shared space private ip>
