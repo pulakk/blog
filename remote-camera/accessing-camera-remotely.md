@@ -28,3 +28,20 @@ Set the *Allow forward to destination zones* to `lan`.
 ![Firewall settings for Port forward in OpenWRT Router](https://raw.githubusercontent.com/pulakk/blog/main/remote-camera/images/openwrt-firewall-port-forward.png)
 On the LuCI web Interface of your OpenWRT router, navigate to `Network > Firewall > Port forwards` 
 and click the `add` button.
+
+Set a name for the forwarding rule and add wan as the `Source zone`. Set an `External port` of your choice and 
+set the internal port to the port through which the camera provides the feed. If the camera provides the feed
+through the [RTSP Protocol](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol), the port will 
+most likely be `554`. Set the `Internal IP Adress` to the IP address of the camera in the local network.
+
+Click `save` and then `save and apply`.
+
+### Conclusion
+You should be able to access your camera feed by using a network video player for e.g. 
+[VLC](https://www.videolan.org/vlc/).
+
+If you have connected your router to a hosted server using a tunnel, you can access
+the camera feed by using the IP address of the hosted server and the `External Port`
+in the port forwarding rule set above.
+
+Enjoy!
