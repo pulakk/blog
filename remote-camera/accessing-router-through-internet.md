@@ -125,7 +125,7 @@ whether your device is connected properly.*
 
 *Also, if you mess up during the driver installation while following the tutorial, feel free to start fresh
 and reflash the firmware onto the router. It's better to not mix up the drivers by trying
-to install everything in one go.
+to install everything in one go.*
 
 ### Creating WireGuard VPN Server through on Digital Ocean
 Sign up / Log in to Digital ocean and create a droplet. You can use the basic ubuntu droplet 
