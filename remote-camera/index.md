@@ -69,9 +69,9 @@ public IP address.
 #### (b) Dynamic public IP Addresses
 Your ISP is may provide you with 
 [dynamic public IP addresses](https://www.techopedia.com/definition/28504/dynamic-internet-protocol-address-dynamic-ip-address),
-in which case you might need to resort to a Dynamic DNS 
+in which case you can make use of a Dynamic DNS 
 ([DDNS](https://en.wikipedia.org/wiki/Dynamic_DNS)) service like [No-IP](https://www.noip.com/). 
-Note: This also means that you will need to get a router with DDNS support.
+Note: This also means that you will need to get a router with DDNS Client support.
 
 Dynamic IP addresses simply mean that your IP Address may change over time. Without keeping track of the
 router's latest IP Address, you can not connect to it. Hence, DDNS
