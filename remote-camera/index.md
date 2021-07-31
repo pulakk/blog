@@ -68,7 +68,7 @@ router, and in effect, your camera, by making requests to that static
 public IP address.
 
 #### (b) Dynamic public IP Addresses
-Your ISP is may provide you with 
+Your ISP may provide you with 
 [dynamic public IP addresses](https://www.techopedia.com/definition/28504/dynamic-internet-protocol-address-dynamic-ip-address),
 in which case you can make use of a Dynamic DNS 
 ([DDNS](https://en.wikipedia.org/wiki/Dynamic_DNS)) service like [No-IP](https://www.noip.com/). 
