@@ -130,7 +130,7 @@ up and accessing a single camera through the internet or both. Either way my pur
 ## Tutorial
 
 This tutorial will guide you through the setup of a specific camera, and router model, so if you want to follow 
-along my recommendation would be to replicate my custom setup. There is some leeway in the choice
+along, my recommendation would be to replicate the same setup. There is some leeway in the choice
 of the camera but setting up the router to be accessible to the internet migh be different for
 different routers.
 
