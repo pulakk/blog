@@ -3,6 +3,7 @@
 ## Intro
 Setting up a camera, to be viewable remotely is a very challening task.
 
+## Challenges
 Picking the right camera is the first step. You might need features like
 nightvision, communication through internet protocol ([IP](https://en.wikipedia.org/wiki/IP_address)), 
 outdoor/indoor depending on your use case, microphone support, 
@@ -70,3 +71,12 @@ the choice of the router and the camera
 and spending hours figuring out solutions for all these problems. Hopefully this tutorial
 should either straighten up the process for you or scare you away from the humongous difficulty of setting
 up and accessing a single camera through the internet or both. Either way my purpose is served.
+
+## Tutorial
+
+This tutorial will guide you through the setup of a specific camera, and router model, so if you want to follow 
+along my recommendation would be to replicate my custom setup. There is some leeway in the choice
+of the camera but setting up the router to be accessible to the internet migh be different for
+different routers.
+
+* [My custom setup for accessing camera remotely](https://pulakk.github.io/blog/remote-camera/custom-setup)
