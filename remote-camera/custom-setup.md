@@ -4,6 +4,8 @@
 * [Home](https://pulakk.github.io/blog/remote-camera/) 
 * [Next Page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
 
+---
+
 ## Inventory
 
 * Router: [TP-Link MR3020 v3.20](https://www.tp-link.com/in/home-networking/3g-4g-router/tl-mr3020/#overview) 
@@ -24,7 +26,7 @@ picked Digital ocean but any other cloud provider should do.
 * Wireguard VPN Server on a Digital Ocean droplet
 * Custom domain name pointing to Digital Ocean droplet (Optional)
 
-
+---
 * [Previous page](https://pulakk.github.io/blog/remote-camera/) 
 * [Home](https://pulakk.github.io/blog/remote-camera/) 
 * [Next Page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
