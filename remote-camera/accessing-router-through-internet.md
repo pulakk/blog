@@ -127,7 +127,7 @@ whether your device is connected properly.*
 and reflash the firmware onto the router as many times as you need. It's better not to mix up the drivers by trying
 to install everything in one go.*
 
-### Creating WireGuard VPN Server through on Digital Ocean
+### Setting up WireGuard VPN Server on Digital Ocean
 Sign up / Log in to Digital ocean and create a droplet. You can use the basic ubuntu droplet 
 which will cost you close to `$5` per month.
 Log into the machine and follow the steps mentioned below.
