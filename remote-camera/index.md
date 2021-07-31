@@ -6,7 +6,9 @@ ocassionally come across. But there are some challenges as well as pitfalls when
 the choice of routers and the setup. In the next section I'll talk about what problems you 
 might face, especially depending on your choice of router and ISP. Then, I am going to 
 introduce my custom inventory and explain how I set up the camera and the router to be accessible
-remotely. Do keep in mind that the tutorial will not be straightforward for someone who is 
+remotely. 
+
+Do keep in mind that the tutorial will not be straightforward for someone who is 
 new to the world of computers and networking. 
 
 ## Challenges
