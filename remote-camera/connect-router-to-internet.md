@@ -8,12 +8,12 @@ I would require VPN client support on my router to access it through a hoster se
 
 ```
 Your home laptop or phone
-            |
-            |
-Hosted Server with public IP Adress --- [CGNAT gateway] --- [Router] ---- Camera
-            ||                                             ||
-            + ============================================= +
-                            VPN Tunnel
+     |
+     |
+Hosted Server --- [CGNAT gateway] --- [Router] ---- Camera
+     ||                                  ||
+     + ================================== +
+                     VPN Tunnel
 ```
 
 [TP-Link routers do not support VPN Clients](https://community.tp-link.com/en/home/forum/topic/168500) at the time of writing this tutorial. Hence, I started by flashing my TP-Link router with the [OpenWRT](https://openwrt.org/)
