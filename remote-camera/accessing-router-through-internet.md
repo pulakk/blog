@@ -277,4 +277,4 @@ Next we will configure the router's firewall rules to access the camera.
 
 * [Previous Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
 * [Home](https://pulakk.github.io/blog/remote-camera/)
-* [Configure OpenWRT Router to access IP Camera remotely](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
+* [Next Page](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
