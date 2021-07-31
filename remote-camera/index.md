@@ -1,6 +1,6 @@
 # Accessing IP Cameras remotely
 
-## Intro
+## Introduction
 Accessing your camera or any other device through the internet is a use case many people
 ocassionally come across. But there are some challenges as well as pitfalls when it comes to
 the choice of routers and the setup. In the next section I'll talk about what problems you 
