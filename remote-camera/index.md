@@ -33,20 +33,20 @@ providing USB support for LTE Dongles or an in-built modem.
 ```
 IP Address assigned to you by ISP
  |
- |---- [static public IP]
+ + ---- [static public IP]
  |          |
  |   Access router directly 
  |     through public IP
  |
- |---- [dynamic + public IP] 
+ + ---- [dynamic + public IP] 
  |          |
  |     Setup Dynamic DNS on router
  |  (Pick Dynamic DNS supported router)
  |
- |---- [(shared space) private IP (behind CGNAT)]
- |          |
- |      VPN Client on router
- |  Access router through hosted VPN server
+ + ---- [(shared space) private IP (behind CGNAT)]
+           |
+        VPN Client on router
+    Access router through hosted VPN server
 ```
 
 If the ISP ([Internet Service Provider](https://en.wikipedia.org/wiki/Internet_service_provider)) 
