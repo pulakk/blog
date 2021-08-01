@@ -1,6 +1,6 @@
 # Accessing IP Cameras remotely
 
-[:arrow_forward: Next Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
+(https://pulakk.github.io/blog/remote-camera/custom-setup)
 
 ---
 ## Introduction
