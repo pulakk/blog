@@ -1,6 +1,6 @@
 # Accessing IP Cameras remotely
 
-* [Next Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
+[Next Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
 
 ---
 ## Introduction
@@ -138,4 +138,4 @@ of the camera but the process of setting up the router to be accessible through 
 different routers.
 
 ---
-* [Next Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
+[Next Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
