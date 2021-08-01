@@ -273,6 +273,6 @@ Next we will configure the router's firewall rules to access the camera.
 
 ------
 
-* [Previous Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
-* [Home](https://pulakk.github.io/blog/remote-camera/)
-* [Next Page](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
+[Previous Page](https://pulakk.github.io/blog/remote-camera/custom-setup) |
+[Home](https://pulakk.github.io/blog/remote-camera/) |
+[Next Page](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
