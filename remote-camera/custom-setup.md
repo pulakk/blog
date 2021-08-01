@@ -1,8 +1,8 @@
 # My custom setup for accessing an IP Camera Remotely
 
-* [Previous page](https://pulakk.github.io/blog/remote-camera/) 
-* [Home](https://pulakk.github.io/blog/remote-camera/) 
-* [Next Page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
+[Previous page](https://pulakk.github.io/blog/remote-camera/) |
+[Home](https://pulakk.github.io/blog/remote-camera/) |
+[Next Page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
 
 ---
 
@@ -27,6 +27,6 @@ picked Digital ocean but any other cloud provider should do.
 * Custom domain name pointing to Digital Ocean droplet (Optional)
 
 ---
-* [Previous page](https://pulakk.github.io/blog/remote-camera/) 
-* [Home](https://pulakk.github.io/blog/remote-camera/) 
-* [Next Page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
+[Previous page](https://pulakk.github.io/blog/remote-camera/) |
+[Home](https://pulakk.github.io/blog/remote-camera/) |
+[Next Page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet)
