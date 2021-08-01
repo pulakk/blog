@@ -1,8 +1,8 @@
 # Accessing TP-Link MR3020 router Remotely
 
-* [Previous Page](https://pulakk.github.io/blog/remote-camera/custom-setup)
-* [Home](https://pulakk.github.io/blog/remote-camera/)
-* [Next Page](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
+[Previous Page](https://pulakk.github.io/blog/remote-camera/custom-setup) |
+[Home](https://pulakk.github.io/blog/remote-camera/) |
+[Next Page](https://pulakk.github.io/blog/remote-camera/accessing-camera-remotely)
 
 ----
 My TP-Link MR3020 v3 router was connected to the internet through a Huawei E3372h-607 USB Dongle Modem, 
