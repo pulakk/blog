@@ -1,7 +1,7 @@
 # Configuring OpenWRT router to enable access to IP Camera
 
-* [Previous page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet) 
-* [Home](https://pulakk.github.io/blog/remote-camera/) 
+[Previous page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet) |
+[Home](https://pulakk.github.io/blog/remote-camera/) 
 
 ---
 
@@ -53,5 +53,5 @@ in the port forwarding rule set above.
 Enjoy!
 
 ---
-* [Previous page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet) 
-* [Home](https://pulakk.github.io/blog/remote-camera/) 
+[Previous page](https://pulakk.github.io/blog/remote-camera/accessing-router-through-internet) |
+[Home](https://pulakk.github.io/blog/remote-camera/) 
